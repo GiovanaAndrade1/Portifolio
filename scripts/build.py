@@ -9,6 +9,9 @@ NAV = [('index.html', 'Home', '⌂'), ('sobre.html', 'Sobre mim', '○'), ('proj
 def e(value):
     return escape(str(value), quote=True)
 
+def social_link(kind, label, href, prefix=''):
+    return f'<a class="social-link" href="{e(href)}" target="_blank" rel="noopener noreferrer"><img class="social-icon" src="{prefix}assets/icons/{kind}.svg" alt="" width="20" height="20"><span>{e(label)}</span></a>'
+
 def button(label, href):
     return f'<a class="button" href="{e(href)}">{e(label)} <span aria-hidden="true">→</span></a>'
 
@@ -33,7 +36,7 @@ def stack_cards(items, detailed=False):
 
 def page(filename, title, body, active='index.html', prefix=''):
     nav = ''.join(f'<a href="{prefix}{url}" {"aria-current=\"page\"" if active == url else ""}><span aria-hidden="true">{icon}</span>{label}</a>' for url,label,icon in NAV)
-    social = f'<a href="{DATA["github"]}" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to={DATA["email"]}" target="_blank" rel="noopener noreferrer">E-mail ↗</a><a href="{DATA["linkedin"]}" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>'
+    social = social_link('github', 'GitHub', DATA['github'], prefix) + social_link('gmail', 'Gmail', 'https://mail.google.com/mail/?view=cm&fs=1&to=' + DATA['email'], prefix) + social_link('linkedin', 'LinkedIn', DATA['linkedin'], prefix)
     html = f'''<!doctype html>
 <html lang="pt-BR">
 <head>
@@ -76,7 +79,7 @@ def build():
     page('projetos.html','Projetos',intro('Meus Projetos:') + cards(DATA['projects']), 'projetos.html')
     about = DATA['about']
     experiences = '<section class="prose"><h2>Experiências</h2>' + ''.join(f'<article class="experience"><h3>{e(x["title"])}</h3><div class="experience-meta"><span>{e(x["organization"])}</span><span>{e(x["period"])}</span></div><p>{e(x["description"])}</p></article>' for x in DATA['experiences']) + '</section>'
-    page('sobre.html','Sobre mim', intro(about[0]['text'],about[1]['text']) + '<div class="prose">' + blocks(about[2:]) + '</div>' + experiences + button('Se interessou?','contato.html'),'sobre.html')
+    page('sobre.html','Sobre mim', '<div class="about-hero">' + intro(about[0]['text'],about[1]['text']) + '<img class="about-photo" src="assets/images/giovana.jpeg" alt="Giovana Andrade" width="1200" height="1600"></div>' + '<div class="prose">' + blocks(about[2:]) + '</div>' + experiences + button('Se interessou?','contato.html'),'sobre.html')
     page('stack.html','Minha stack',intro('Minhas Skills Stacks:') + stack_cards(DATA['stack'],True),'stack.html')
     contact = intro('Vamos conversar!','Sinta-se à vontade para entrar em contato caso tenha interesse no meu perfil ou alguma oportunidade profissional. Responderei o mais breve possível.') + f'''
     <section class="section contact-section"><h2>Entre em contato</h2>
@@ -85,10 +88,10 @@ def build():
         <label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" required maxlength="200" placeholder="seu@email.com">
         <label for="mensagem">Mensagem</label><textarea id="mensagem" name="mensagem" rows="6" required maxlength="5000" placeholder="Como podemos trabalhar juntos?"></textarea>
         <p class="form-hint">Abre o Gmail no navegador com a mensagem preenchida. Entre na sua conta, se necessário, revise e clique em Enviar.</p>
-        <button class="button" type="submit">Abrir no Gmail <span aria-hidden="true">↗</span></button><p id="form-status" role="status" aria-live="polite"></p>
+        <button class="button" type="submit"><img class="social-icon" src="assets/icons/gmail.svg" alt="" width="20" height="20">Abrir no Gmail</button><p id="form-status" role="status" aria-live="polite"></p>
         <noscript><p>Escreva diretamente para <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to={e(DATA['email'])}" target="_blank" rel="noopener noreferrer">{e(DATA['email'])}</a>.</p></noscript>
       </form>
-    </section><section class="section"><h2>Contato</h2><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to={e(DATA['email'])}" target="_blank" rel="noopener noreferrer">{e(DATA['email'])}</a><h2 class="social-title">Social</h2><div class="contact-social"><a href="{e(DATA['github'])}" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="{e(DATA['linkedin'])}" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></section>'''
+    </section><section class="section"><h2>Contato</h2><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to={e(DATA['email'])}" target="_blank" rel="noopener noreferrer">{e(DATA['email'])}</a><h2 class="social-title">Social</h2><div class="contact-social">{social_link("github", "GitHub", DATA["github"])}{social_link("linkedin", "LinkedIn", DATA["linkedin"])}{social_link("gmail", "Gmail", "https://mail.google.com/mail/?view=cm&fs=1&to=" + DATA["email"])}</div></section>'''
     page('contato.html','Contato',contact,'contato.html')
     for project in DATA['projects']:
         href = project['url']
