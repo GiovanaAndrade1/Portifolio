@@ -1,106 +1,40 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Giovana Portifólio </title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sou desenvolvedora de software apaixonada por transformar ideias em soluções digitais funcionais e intuitivas.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Portfólio | Giovana Andrade</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
+  <noscript><style>.navigation-panel { display: flex; } .menu-toggle { display: none; }</style></noscript>
 </head>
 <body>
-
-    <nav class="navegacao">
-        <ul class="menu"> 
-            <li> 
-                <a href="#inicio" class="menu_link"> Início </a>
-            </li>
-             <li> 
-                <a href="#sobre" class="menu_link"> Sobre mim </a>
-            </li>
-             <li> 
-                <a href="#projetos" class="menu_link"> Projetos </a>
-            </li>
-             <li> 
-                <a href="#contato" class="menu_link"> Contato </a>
-            </li>
-        </ul>
-
-
-    </nav>
-    <main id="inicio" class="cabecalho"> 
-        <div> 
-            <img src = "./img/Foto minha.jpeg "alt ="foto de Giovana Andrade" class="foto_perfil"> 
-            <h1> Giovana Andrade</h1>
-            <p class="sub_titulo"> Software Engineer </p>
-        </div>
-    </main>
-    <section id="sobre" class="sobre"> 
-        <h2 class="sobre_titulo">Sobre Mim </h2>
-         <div class="sobre_caixa"> 
-            <p class="sobre_texto"> 
-                    Olá! Sou a Giovana, desenvolvedora Full-Stack e apaixonada por criar soluções que façam a diferença. 
-                    Acredito que sempre há algo novo para aprender, por isso estou em constante evolução, buscando desafios 
-                    que me permitam crescer profissionalmente e desenvolver projetos cada vez melhores.
-
-            </p>
-        </div>
-        
-    </section>
-
-    <section id ="projetos" class="projetos"> 
-        <h2 class="projeto_titulo">  Meus Projetos</h2>
-        <div class = "projeto_caixa"> 
-
-            <div class="Projeto_pessoal">
-                <img src="./img/578c0b8fb40a84a7e6b1129a76c32810.jpg" alt="Projeto 1" class="projeto_imagem">
-                <h3 class="info_projeto">  Project 1 </h3>
-                <p class="paragrafo_projeto"> 
-                    descrição
-                </p>
-            </div>
-
-            
-            <div class="Projeto_pessoal">
-                <img src="./img/be9382b1cf2ec7355767f1cd7b6c8fa5.jpg" alt="Projeto 2" class="projeto_imagem">
-                <h3 class="info_projeto">  Project 2 </h3>
-                <p class="paragrafo_projeto"> 
-                    descrição
-                </p>
-            </div>
-
-
-            
-            <div class="Projeto_pessoal">
-                <img src="./img/e6c2e00264f737d83c5130cc6fb0e524.jpg" alt="Projeto 3" class="projeto_imagem">
-                <h3 class="info_projeto">  Project 3 </h3>
-                <p class="paragrafo_projeto"> 
-                    descrição
-                </p>
-            </div>
-
-
-            
-            <div class="Projeto_pessoal">
-                <img src="./img/images.jpg" alt="Projeto 4" class="projeto_imagem">
-                <h3 class="info_projeto">  Project 4 </h3>
-                <p class="paragrafo_projeto"> 
-                    descrição
-                </p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section id="contatos" class="contatos"> 
-        <h2 class="contato_titulo"> Contatos </h2>
-        <form class="formulario_contato" id="formulario"> 
-            <div class="grupo_form">
-                 <input placeholder ="Nome" class="campo_form">
-                <textarea placeholder ="Digite sua mensagem" class="text_form"> </textarea>
-
-            </div>
-           
-        </form>
-    </section>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="site-shell">
+    <header class="sidebar">
+      <a class="identity" href="index.html"><img src="assets/images/giovana.jpeg" alt="" width="48" height="48"><span><strong>Giovana Andrade</strong><span>Software Developer</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navegacao"><span aria-hidden="true">☰</span><span class="sr-only">Abrir menu</span></button>
+      <div class="navigation-panel" id="navegacao"><nav aria-label="Navegação principal"><a href="index.html" aria-current="page"><span aria-hidden="true">⌂</span>Home</a><a href="sobre.html" ><span aria-hidden="true">○</span>Sobre mim</a><a href="projetos.html" ><span aria-hidden="true">▦</span>Projetos</a><a href="stack.html" ><span aria-hidden="true">◈</span>Stack</a><a href="contato.html" ><span aria-hidden="true">↗</span>Contato</a></nav><div class="social-links" aria-label="Redes sociais"><a href="https://github.com/GiovanaAndrade1" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=ferreirapoc@gmail.com" target="_blank" rel="noopener noreferrer">E-mail ↗</a><a href="https://www.linkedin.com/in/-giovanaandrade" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></div>
+    </header>
+    <div class="main-column">
+      <main id="conteudo"><section class="intro"><span class="availability"><span aria-hidden="true"></span>Available for Work</span><h1>Muito Prazer, me chamo Giovana Andrade...</h1><p>Sou desenvolvedora de software apaixonada por transformar ideias em soluções digitais funcionais e intuitivas.</p></section><a class="button" href="sobre.html">Mais sobre mim <span aria-hidden="true">→</span></a><section class="section"><h2>Projetos Recentes</h2><div class="project-grid">
+    <a class="project-card" href="projetos/glaucoma.html">
+      <div class="project-image"><img src="assets/images/glaucoma.jpg" alt="Avaliação de métodos computacionais para a detecção do glaucoma em imagens retinianas" loading="lazy" width="800" height="480"><span class="project-arrow" aria-hidden="true">↗</span></div>
+      <div class="project-info"><span class="eyebrow">Machine Learning</span><h3>Avaliação de métodos computacionais para a detecção do glaucoma em imagens retinianas</h3></div>
+    </a>
+    <a class="project-card" href="projetos/dos.html">
+      <div class="project-image"><img src="assets/images/dos.png" alt="Detecção de possíveis ataques de negação de serviço (DoS)" loading="lazy" width="800" height="480"><span class="project-arrow" aria-hidden="true">↗</span></div>
+      <div class="project-info"><span class="eyebrow">CyberSecurity</span><h3>Detecção de possíveis ataques de negação de serviço (DoS)</h3></div>
+    </a>
+    <a class="project-card" href="projetos/ia-educacao.html">
+      <div class="project-image"><img src="assets/images/ia-educacao.jpeg" alt="Inteligência Artificial na Educação" loading="lazy" width="800" height="480"><span class="project-arrow" aria-hidden="true">↗</span></div>
+      <div class="project-info"><span class="eyebrow">Article</span><h3>Inteligência Artificial na Educação</h3></div>
+    </a></div><a class="button" href="projetos.html">Todos os projetos <span aria-hidden="true">→</span></a></section><section class="section"><h2>Minha stack</h2><div class="stack-grid"><article class="stack-card"><div class="stack-heading"><span class="tech-icon" aria-hidden="true"><img src="assets/icons/stack-0.svg" alt="" width="44" height="44" loading="lazy"></span><div><h3>Framer</h3><span class="muted">Web Design</span></div></div></article><article class="stack-card"><div class="stack-heading"><span class="tech-icon" aria-hidden="true"><img src="assets/icons/stack-1.svg" alt="" width="44" height="44" loading="lazy"></span><div><h3>HTML 5</h3><span class="muted">Structure and Content</span></div></div></article><article class="stack-card"><div class="stack-heading"><span class="tech-icon" aria-hidden="true"><img src="assets/icons/stack-2.svg" alt="" width="44" height="44" loading="lazy"></span><div><h3>CSS 3</h3><span class="muted">Visual Styling</span></div></div></article></div><a class="button" href="stack.html">Todas stacks <span aria-hidden="true">→</span></a></section></main>
+      <footer><span>© Giovana Andrade. Todos os direitos reservados.</span><div><a href="privacidade.html">Privacidade</a><a href="cookies.html">Cookies</a></div></footer>
+    </div>
+  </div>
 </body>
 </html>

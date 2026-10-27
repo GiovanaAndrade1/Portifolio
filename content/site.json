@@ -1,0 +1,910 @@
+{
+  "name": "Giovana Andrade",
+  "role": "Software Developer",
+  "email": "ferreirapoc@gmail.com",
+  "github": "https://github.com/GiovanaAndrade1",
+  "linkedin": "https://www.linkedin.com/in/-giovanaandrade",
+  "intro": "Sou desenvolvedora de software apaixonada por transformar ideias em soluções digitais funcionais e intuitivas.",
+  "about": [
+    {
+      "tag": "h1",
+      "text": "Mais sobre mim:"
+    },
+    {
+      "tag": "p",
+      "text": "Sou estudante de Ciência da Computação e desenvolvedora de software, com interesse em tecnologia e desenvolvimento de soluções. Busco aprimorar constantemente meus conhecimentos, explorar novas tecnologias e transformar ideias em projetos funcionais e relevantes."
+    },
+    {
+      "tag": "h2",
+      "text": "Educação"
+    },
+    {
+      "tag": "p",
+      "text": "Minha formação começou no Instituto Federal de Minas Gerais (IFMG), onde cursei Técnico em Informática, desenvolvendo uma base sólida em tecnologia e programação. Atualmente, curso Bacharelado em Ciência da Computação no IF Sudeste MG, aprofundando meus conhecimentos em desenvolvimento de software, programação e resolução de problemas."
+    },
+    {
+      "tag": "h2",
+      "text": "Stack"
+    },
+    {
+      "tag": "p",
+      "text": "Minha experiência técnica abrange desenvolvimento web, inteligência artificial, machine learning, processamento de imagens e análise de dados. Tenho conhecimentos em Python, C++, Java, TypeScript, HTML, CSS, Django e MySQL, além de experiência com machine learning e projetos de inteligência artificial. Também possuo conhecimentos em desenvolvimento mobile, hardware, redes e suporte de TI, buscando aplicar diferentes tecnologias na criação de soluções eficientes e funcionais."
+    }
+  ],
+  "projects": [
+    {
+      "slug": "glaucoma",
+      "category": "Machine Learning",
+      "image": "glaucoma.jpg",
+      "title": "Avaliação de métodos computacionais para a detecção do glaucoma em imagens retinianas",
+      "body": [
+        {
+          "tag": "h3",
+          "text": "01 — O problema"
+        },
+        {
+          "tag": "p",
+          "text": "O glaucoma é uma doença ocular que pode causar perda irreversível da visão. A identificação precoce é importante para possibilitar o acompanhamento adequado dos pacientes."
+        },
+        {
+          "tag": "p",
+          "text": "A partir desse contexto, o projeto explora o uso de inteligência artificial e visão computacional para analisar imagens da retina e auxiliar na identificação de padrões associados ao glaucoma."
+        },
+        {
+          "tag": "h3",
+          "text": "02 — A solução"
+        },
+        {
+          "tag": "p",
+          "text": "Está sendo desenvolvido uma pipeline computacional capaz de trabalhar com imagens retinianas, utilizando técnicas de processamento de imagens e aprendizado de máquina para extrair informações relevantes e realizar a classificação."
+        },
+        {
+          "tag": "p",
+          "text": "A proposta é utilizar os padrões presentes nas imagens como entrada para modelos computacionais capazes de diferenciar características associadas a casos de glaucoma."
+        },
+        {
+          "tag": "h3",
+          "text": "03 — Processamento das imagens"
+        },
+        {
+          "tag": "p",
+          "text": "Uma das etapas fundamentais do projeto é o pré-processamento das imagens, preparando os dados para serem utilizados pelos modelos de aprendizado de máquina."
+        },
+        {
+          "tag": "p",
+          "text": "Foram aplicadas técnicas de processamento e análise de imagens, buscando melhorar a qualidade dos dados e destacar características relevantes da retina para a etapa de classificação."
+        },
+        {
+          "tag": "h3",
+          "text": "04 — Machine Learning"
+        },
+        {
+          "tag": "p",
+          "text": "O projeto utiliza conceitos de Machine Learning para desenvolver um modelo capaz de aprender padrões presentes nas imagens e utilizá-los na identificação de possíveis casos de glaucoma."
+        },
+        {
+          "tag": "p",
+          "text": "A construção do pipeline envolve etapas de preparação dos dados, processamento das imagens, treinamento dos modelos e avaliação dos resultados."
+        },
+        {
+          "tag": "h3",
+          "text": "05 — Visão computacional"
+        },
+        {
+          "tag": "p",
+          "text": "A aplicação de visão computacional permite que características presentes nas imagens retinianas sejam analisadas computacionalmente."
+        },
+        {
+          "tag": "p",
+          "text": "Essa abordagem demonstra como técnicas de inteligência artificial podem ser aplicadas a problemas de análise de imagens, especialmente em contextos nos quais grandes quantidades de dados visuais precisam ser processadas."
+        },
+        {
+          "tag": "h3",
+          "text": "06 — Tecnologias e conceitos"
+        },
+        {
+          "tag": "p",
+          "text": "Python"
+        },
+        {
+          "tag": "p",
+          "text": "Inteligência Artificial"
+        },
+        {
+          "tag": "p",
+          "text": "Visão Computacional"
+        },
+        {
+          "tag": "p",
+          "text": "Processamento de imagens"
+        },
+        {
+          "tag": "p",
+          "text": "OpenCV"
+        },
+        {
+          "tag": "p",
+          "text": "Scikit-learn"
+        },
+        {
+          "tag": "p",
+          "text": "Análise de imagens retinianas"
+        },
+        {
+          "tag": "p",
+          "text": "Classificação de imagens"
+        },
+        {
+          "tag": "p",
+          "text": "Manipulação de dados"
+        },
+        {
+          "tag": "h3",
+          "text": "07 — Objetivo"
+        },
+        {
+          "tag": "p",
+          "text": "O projeto busca explorar a aplicação de inteligência artificial na análise de imagens médicas, utilizando técnicas de Machine Learning e visão computacional para auxiliar na detecção de padrões relacionados ao glaucoma."
+        },
+        {
+          "tag": "p",
+          "text": "Além do desenvolvimento técnico, o projeto permitiu trabalhar com um problema real, envolvendo preparação de dados, processamento de imagens, treinamento de modelos e avaliação de resultados."
+        },
+        {
+          "tag": "h3",
+          "text": "Impacto"
+        },
+        {
+          "tag": "p",
+          "text": "Este projeto demonstra uma aplicação prática de IA em uma área de grande relevância, mostrando como ferramentas computacionais podem ser utilizadas para apoiar a análise de imagens e pesquisas relacionadas à saúde."
+        },
+        {
+          "tag": "p",
+          "text": "O sistema é uma ferramenta de pesquisa e não substitui avaliação ou diagnóstico realizado por profissionais de saúde."
+        }
+      ],
+      "url": "https://github.com/glaucoma-cnn/GlaucomaDataset"
+    },
+    {
+      "slug": "dos",
+      "category": "CyberSecurity",
+      "image": "dos.png",
+      "title": "Detecção de possíveis ataques de negação de serviço (DoS)",
+      "body": [
+        {
+          "tag": "p",
+          "text": "Sistema de Detecção de Ataques DoS"
+        },
+        {
+          "tag": "h3",
+          "text": "01 — O problema"
+        },
+        {
+          "tag": "p",
+          "text": "Ataques de negação de serviço (DoS) podem gerar um grande volume de requisições direcionadas a um sistema, comprometendo seu desempenho e disponibilidade. A partir desse problema, desenvolvi uma solução para analisar a frequência de requisições associadas a diferentes endereços IP e identificar possíveis comportamentos suspeitos."
+        },
+        {
+          "tag": "h3",
+          "text": "02 — A solução"
+        },
+        {
+          "tag": "p",
+          "text": "O projeto utiliza uma tabela hash para organizar e rastrear os endereços IP presentes nos dados analisados. A estrutura permite registrar a frequência de cada IP e acompanhar a distribuição das informações, tornando possível analisar o comportamento das requisições de forma eficiente."
+        },
+        {
+          "tag": "h3",
+          "text": "03 — Como foi desenvolvido"
+        },
+        {
+          "tag": "p",
+          "text": "O sistema foi desenvolvido em C++, aplicando conceitos de estruturas de dados, funções hash e tratamento de colisões. Durante o desenvolvimento, também foram considerados aspectos de desempenho, como tempo de execução, posições ocupadas na tabela e fator de carga."
+        },
+        {
+          "tag": "h3",
+          "text": "04 — Análise e desempenho"
+        },
+        {
+          "tag": "p",
+          "text": "Além da identificação e contagem dos endereços IP, o projeto permite observar métricas relacionadas ao funcionamento da tabela, contribuindo para a análise de sua eficiência e distribuição dos dados. O objetivo foi não apenas desenvolver a solução, mas também compreender o impacto das escolhas de estrutura e implementação sobre seu desempenho."
+        },
+        {
+          "tag": "h3",
+          "text": "Tecnologias e conceitos"
+        },
+        {
+          "tag": "p",
+          "text": "C++"
+        },
+        {
+          "tag": "p",
+          "text": "Tabela Hash"
+        },
+        {
+          "tag": "p",
+          "text": "Funções Hash"
+        },
+        {
+          "tag": "p",
+          "text": "Estruturas de Dados"
+        },
+        {
+          "tag": "p",
+          "text": "Tratamento de Colisões"
+        },
+        {
+          "tag": "p",
+          "text": "Análise de Desempenho"
+        },
+        {
+          "tag": "p",
+          "text": "Processamento de dados"
+        },
+        {
+          "tag": "p",
+          "text": "Segurança de redes"
+        },
+        {
+          "tag": "h3",
+          "text": "Objetivo"
+        },
+        {
+          "tag": "p",
+          "text": "Este projeto foi desenvolvido como uma aplicação prática de conceitos de estruturas de dados e algoritmos em um contexto relacionado à segurança de redes, explorando como diferentes estratégias de organização e processamento de dados podem contribuir para a identificação de padrões de comportamento."
+        }
+      ],
+      "url": "https://giovanaandrade1.github.io/hash/"
+    },
+    {
+      "slug": "ia-educacao",
+      "category": "Article",
+      "image": "ia-educacao.jpeg",
+      "title": "Inteligência Artificial na Educação",
+      "body": [
+        {
+          "tag": "h3",
+          "text": "01 — O problema"
+        },
+        {
+          "tag": "p",
+          "text": "A popularização de ferramentas de Inteligência Artificial Generativa no ambiente acadêmico trouxe novas possibilidades para o ensino e a pesquisa, mas também levantou questões relacionadas à ética, autoria, plágio, desinformação e responsabilidade na produção acadêmica."
+        },
+        {
+          "tag": "p",
+          "text": "O projeto surgiu a partir da necessidade de compreender esses desafios e incentivar uma utilização mais consciente da IA dentro do ambiente educacional."
+        },
+        {
+          "tag": "h3",
+          "text": "02 — A proposta"
+        },
+        {
+          "tag": "p",
+          "text": "O projeto teve como objetivo pesquisar e reunir boas práticas e orientações para o uso ético e responsável da Inteligência Artificial Generativa no contexto educacional."
+        },
+        {
+          "tag": "p",
+          "text": "Além disso, buscou compreender como os estudantes utilizam essas ferramentas e identificar possibilidades de melhoria no processo de ensino e aprendizagem."
+        },
+        {
+          "tag": "h3",
+          "text": "03 — Como foi desenvolvido"
+        },
+        {
+          "tag": "p",
+          "text": "O trabalho foi desenvolvido a partir de uma revisão de literatura, pesquisando políticas, diretrizes e recomendações relacionadas ao uso de IA em instituições de ensino e pesquisa."
+        },
+        {
+          "tag": "p",
+          "text": "O desenvolvimento foi dividido em etapas:"
+        },
+        {
+          "tag": "p",
+          "text": "Pesquisa e revisão da literatura"
+        },
+        {
+          "tag": "p",
+          "text": "Levantamento de diretrizes institucionais"
+        },
+        {
+          "tag": "p",
+          "text": "Diagnóstico do uso de IA pelos estudantes"
+        },
+        {
+          "tag": "p",
+          "text": "Elaboração de orientações práticas"
+        },
+        {
+          "tag": "p",
+          "text": "Divulgação e implementação das recomendações"
+        },
+        {
+          "tag": "p",
+          "text": "Durante a pesquisa, ferramentas como Perplexity, Elicit e Gemini também foram utilizadas como apoio à revisão e organização das informações, sempre dentro da proposta de utilização consciente e transparente da IA."
+        },
+        {
+          "tag": "h3",
+          "text": "04 — Ética e responsabilidade"
+        },
+        {
+          "tag": "p",
+          "text": "Um dos principais pontos do projeto é reforçar que a IA deve atuar como ferramenta de apoio, e não substituir o pensamento crítico, a autoria ou a responsabilidade do estudante e pesquisador."
+        },
+        {
+          "tag": "p",
+          "text": "O trabalho aborda a importância de verificar as informações produzidas pelas ferramentas, reconhecer quando a IA foi utilizada e manter a supervisão humana durante o processo."
+        },
+        {
+          "tag": "h3",
+          "text": "05 — Resultado"
+        },
+        {
+          "tag": "p",
+          "text": "Como resultado, foi elaborado um guia de orientações e sugestões para o uso ético e responsável da IA generativa no contexto acadêmico."
+        },
+        {
+          "tag": "p",
+          "text": "Entre as propostas apresentadas está a criação de uma declaração sobre o uso ou não uso de Inteligência Artificial em trabalhos acadêmicos, promovendo maior transparência sobre a participação dessas ferramentas na produção dos trabalhos."
+        },
+        {
+          "tag": "h3",
+          "text": "06 — Impacto e aplicação"
+        },
+        {
+          "tag": "p",
+          "text": "O projeto busca contribuir para a construção de uma cultura acadêmica baseada em transparência, responsabilidade e integridade no uso da Inteligência Artificial."
+        },
+        {
+          "tag": "p",
+          "text": "Como resultado, as orientações desenvolvidas têm a perspectiva de servir posteriormente como diretriz para o uso de Inteligência Artificial Generativa no IF Sudeste MG, contribuindo para orientar estudantes, professores e demais membros da comunidade acadêmica sobre práticas éticas, responsáveis e transparentes no uso dessas tecnologias."
+        },
+        {
+          "tag": "p",
+          "text": "A proposta também incentiva a criação de mecanismos institucionais de acompanhamento, formação e orientação, preparando a comunidade acadêmica para lidar de forma crítica e consciente com a evolução da Inteligência Artificial."
+        },
+        {
+          "tag": "h3",
+          "text": "Objetivo"
+        },
+        {
+          "tag": "p",
+          "text": "Investigar o uso da Inteligência Artificial Generativa no ambiente educacional e desenvolver orientações que incentivem sua utilização de maneira ética, responsável, transparente e produtiva, preservando a autoria e o pensamento crítico no processo de aprendizagem. As recomendações desenvolvidas poderão posteriormente servir como base para diretrizes institucionais do IF Sudeste MG."
+        }
+      ],
+      "url": "https://drive.google.com/file/d/1zP3I-hsMZDgi6FveYHkVaFlThzt8WeI2/view"
+    },
+    {
+      "slug": "portfolio",
+      "category": "Design",
+      "image": "portfolio.jpeg",
+      "title": "Portifólio (no Framer)",
+      "body": [
+        {
+          "tag": "h3",
+          "text": "01 — A proposta"
+        },
+        {
+          "tag": "p",
+          "text": "Este projeto consiste na criação do meu portfólio profissional, desenvolvido inicialmente no Framer, com o objetivo de apresentar minha trajetória, habilidades, projetos e experiências na área de tecnologia de forma visual, organizada e acessível."
+        },
+        {
+          "tag": "p",
+          "text": "A proposta é criar uma identidade visual que represente meu perfil como desenvolvedora de software, equilibrando estética, funcionalidade e uma navegação simples."
+        },
+        {
+          "tag": "h3",
+          "text": "02 — Design"
+        },
+        {
+          "tag": "p",
+          "text": "O design está sendo desenvolvido no Framer, explorando diferentes elementos de interface, animações, transições e interações para criar uma experiência mais dinâmica."
+        },
+        {
+          "tag": "p",
+          "text": "A estrutura foi pensada para apresentar as informações de forma clara, utilizando diferentes seções para destacar sobre mim, formação, habilidades, projetos e contato."
+        },
+        {
+          "tag": "h3",
+          "text": "03 — Experiência do usuário"
+        },
+        {
+          "tag": "p",
+          "text": "Um dos focos do projeto é criar uma experiência de navegação intuitiva e responsiva, garantindo que o conteúdo seja facilmente acessível independentemente do dispositivo utilizado.04 — Da interface ao código"
+        },
+        {
+          "tag": "p",
+          "text": "O projeto não ficará limitado ao protótipo desenvolvido no Framer. A interface está sendo utilizada como base visual para uma versão completamente codificada do portfólio."
+        },
+        {
+          "tag": "p",
+          "text": "A próxima etapa consiste em transformar o design e as interações desenvolvidas no Framer em uma aplicação real, utilizando tecnologias de desenvolvimento web e reproduzindo as funcionalidades e animações através de código."
+        },
+        {
+          "tag": "h3",
+          "text": "05 — Desenvolvimento"
+        },
+        {
+          "tag": "p",
+          "text": "A versão codificada está sendo desenvolvida paralelamente ao design, permitindo aplicar na prática conceitos de desenvolvimento front-end, responsividade, componentes, animações e organização de interfaces."
+        },
+        {
+          "tag": "p",
+          "text": "Essa etapa também permite explorar como transformar uma interface visual em uma aplicação funcional, mantendo a identidade e a experiência planejadas durante o processo de design."
+        },
+        {
+          "tag": "h3",
+          "text": "06 — Tecnologias e conceitos"
+        },
+        {
+          "tag": "p",
+          "text": "Framer"
+        },
+        {
+          "tag": "p",
+          "text": "HTML"
+        },
+        {
+          "tag": "p",
+          "text": "CSS"
+        },
+        {
+          "tag": "p",
+          "text": "JavaScript"
+        },
+        {
+          "tag": "p",
+          "text": "Desenvolvimento Front-end"
+        },
+        {
+          "tag": "p",
+          "text": "Design de Interfaces"
+        },
+        {
+          "tag": "p",
+          "text": "Responsividade"
+        },
+        {
+          "tag": "p",
+          "text": "Animações e interações"
+        },
+        {
+          "tag": "p",
+          "text": "UX/UI"
+        },
+        {
+          "tag": "p",
+          "text": "Desenvolvimento baseado em componentes"
+        },
+        {
+          "tag": "h3",
+          "text": "Objetivo"
+        },
+        {
+          "tag": "p",
+          "text": "Desenvolver um portfólio profissional que una design e desenvolvimento, utilizando o Framer para explorar e estruturar a experiência visual e, posteriormente, transformar essa interface em uma aplicação totalmente codificada."
+        }
+      ],
+      "url": "https://giovana-portifolio.framer.website/"
+    },
+    {
+      "slug": "chessmath",
+      "category": "CRUD completo",
+      "image": "chessmath.png",
+      "title": "ChessMath",
+      "body": [
+        {
+          "tag": "p",
+          "text": "01 — O problema"
+        },
+        {
+          "tag": "p",
+          "text": "Organizar torneios de xadrez exige acompanhar participantes, partidas, resultados e rodadas, além de realizar os pareamentos de forma equilibrada. Em sistemas tradicionais de eliminação, um jogador pode ser eliminado após uma derrota, deixando de participar das rodadas seguintes."
+        },
+        {
+          "tag": "p",
+          "text": "O projeto foi desenvolvido para oferecer uma alternativa baseada no Sistema Suíço, permitindo que todos os participantes continuem competindo durante o torneio."
+        },
+        {
+          "tag": "p",
+          "text": "02 — A solução"
+        },
+        {
+          "tag": "p",
+          "text": "A aplicação realiza o pareamento automático das partidas utilizando o modelo suíço, considerando o desempenho e o nível dos participantes para formar confrontos mais equilibrados."
+        },
+        {
+          "tag": "p",
+          "text": "Dessa forma, os jogadores são pareados com outros de desempenho semelhante ao longo das rodadas, sem que uma derrota resulte na eliminação do participante."
+        },
+        {
+          "tag": "p",
+          "text": "03 — Como funciona"
+        },
+        {
+          "tag": "p",
+          "text": "A cada rodada, os resultados das partidas são utilizados para determinar a classificação e orientar os próximos pareamentos. O sistema busca formar confrontos entre jogadores que apresentam níveis de desempenho próximos, tornando as partidas mais equilibradas."
+        },
+        {
+          "tag": "p",
+          "text": "Diferentemente de um torneio eliminatório, todos os participantes permanecem no torneio, independentemente dos resultados obtidos nas rodadas anteriores."
+        },
+        {
+          "tag": "p",
+          "text": "04 — Desenvolvimento"
+        },
+        {
+          "tag": "p",
+          "text": "O sistema foi desenvolvido utilizando Python e Django, com integração a banco de dados para armazenar e organizar as informações dos participantes, torneios, partidas, rodadas e resultados."
+        },
+        {
+          "tag": "p",
+          "text": "A aplicação também possui funcionalidades de gerenciamento, permitindo cadastrar, consultar, editar e excluir informações relacionadas ao torneio."
+        },
+        {
+          "tag": "p",
+          "text": "05 — O que o projeto aborda"
+        },
+        {
+          "tag": "p",
+          "text": "Pareamento automático de partidas"
+        },
+        {
+          "tag": "p",
+          "text": "Sistema Suíço de competição"
+        },
+        {
+          "tag": "p",
+          "text": "Classificação por desempenho"
+        },
+        {
+          "tag": "p",
+          "text": "Gerenciamento de participantes"
+        },
+        {
+          "tag": "p",
+          "text": "Gerenciamento de torneios"
+        },
+        {
+          "tag": "p",
+          "text": "Controle de partidas e rodadas"
+        },
+        {
+          "tag": "p",
+          "text": "Persistência de dados"
+        },
+        {
+          "tag": "p",
+          "text": "Operações CRUD"
+        },
+        {
+          "tag": "p",
+          "text": "Desenvolvimento back-end"
+        },
+        {
+          "tag": "p",
+          "text": "Banco de dados relacional"
+        },
+        {
+          "tag": "h3",
+          "text": "Objetivo"
+        },
+        {
+          "tag": "p",
+          "text": "O principal objetivo foi desenvolver uma solução capaz de automatizar a organização de torneios de xadrez, aplicando conceitos de algoritmos, estruturas de dados, desenvolvimento web e banco de dados."
+        },
+        {
+          "tag": "p",
+          "text": "O projeto também permitiu trabalhar com um problema real de pareamento e organização de participantes, transformando as regras do Sistema Suíço em uma solução computacional capaz de gerenciar o torneio de forma mais eficiente e organizada."
+        }
+      ],
+      "url": "https://chessmatch.onrender.com/"
+    },
+    {
+      "slug": "nacarteira",
+      "category": "Mobile",
+      "image": "nacarteira.jpg",
+      "title": "NaCarteira",
+      "body": [
+        {
+          "tag": "h3",
+          "text": "01 — O problema"
+        },
+        {
+          "tag": "p",
+          "text": "Organizar as finanças pessoais pode ser difícil quando as pessoas não possuem uma forma simples de acompanhar seus gastos, entradas e movimentações financeiras."
+        },
+        {
+          "tag": "p",
+          "text": "Pensando nisso, o NaCarteira foi desenvolvido como uma aplicação mobile voltada para facilitar o controle financeiro, permitindo que o usuário registre suas movimentações e acompanhe sua situação financeira de maneira mais organizada."
+        },
+        {
+          "tag": "h3",
+          "text": "02 — A solução"
+        },
+        {
+          "tag": "p",
+          "text": "O NaCarteira é um aplicativo desenvolvido para gerenciamento de finanças pessoais, permitindo registrar entradas e despesas e acompanhar as movimentações realizadas."
+        },
+        {
+          "tag": "p",
+          "text": "A aplicação possui uma tela inicial que apresenta um resumo das movimentações e calcula os valores de entradas e despesas, além de permitir adicionar novos registros informando descrição, valor, data e tipo da movimentação."
+        },
+        {
+          "tag": "h3",
+          "text": "03 — Desenvolvimento"
+        },
+        {
+          "tag": "p",
+          "text": "O aplicativo foi desenvolvido utilizando React Native, permitindo a criação de uma aplicação mobile com uma estrutura baseada em componentes e diferentes telas de navegação."
+        },
+        {
+          "tag": "p",
+          "text": "A aplicação utiliza React Navigation para organizar a navegação entre as páginas e componentes reutilizáveis para elementos como cabeçalho, saldo, ações e movimentações."
+        },
+        {
+          "tag": "p",
+          "text": "Também foram utilizadas animações para tornar algumas interações mais fluidas, incluindo transições durante o cadastro de movimentações e interações por gesto."
+        },
+        {
+          "tag": "h3",
+          "text": "04 — Banco de dados e autenticação"
+        },
+        {
+          "tag": "p",
+          "text": "Para armazenar as informações, o projeto utiliza o Firebase, com o Cloud Firestore como banco de dados."
+        },
+        {
+          "tag": "p",
+          "text": "Os dados das movimentações são organizados de acordo com cada usuário autenticado, permitindo que cada conta tenha acesso às suas próprias informações financeiras."
+        },
+        {
+          "tag": "p",
+          "text": "A autenticação também utiliza o Firebase, enquanto o AsyncStorage é utilizado para manter a persistência da sessão no ambiente mobile."
+        },
+        {
+          "tag": "h3",
+          "text": "05 — Funcionalidades"
+        },
+        {
+          "tag": "p",
+          "text": "Entre as funcionalidades implementadas estão:"
+        },
+        {
+          "tag": "p",
+          "text": "Cadastro de entradas e despesas"
+        },
+        {
+          "tag": "p",
+          "text": "Registro de descrição, valor e data"
+        },
+        {
+          "tag": "p",
+          "text": "Classificação entre entrada e despesa"
+        },
+        {
+          "tag": "p",
+          "text": "Cálculo do total de entradas"
+        },
+        {
+          "tag": "p",
+          "text": "Cálculo do total de despesas"
+        },
+        {
+          "tag": "p",
+          "text": "Listagem das últimas movimentações"
+        },
+        {
+          "tag": "p",
+          "text": "Exclusão de movimentações por gesto"
+        },
+        {
+          "tag": "p",
+          "text": "Autenticação de usuários"
+        },
+        {
+          "tag": "p",
+          "text": "Persistência dos dados no Firebase"
+        },
+        {
+          "tag": "p",
+          "text": "Navegação entre diferentes áreas do aplicativo"
+        },
+        {
+          "tag": "p",
+          "text": "Seleção de datas"
+        },
+        {
+          "tag": "p",
+          "text": "Interface com animações e transições"
+        },
+        {
+          "tag": "h3",
+          "text": "06 — Experiência mobile"
+        },
+        {
+          "tag": "p",
+          "text": "Um dos pontos trabalhados no projeto foi a criação de uma experiência adequada para dispositivos móveis."
+        },
+        {
+          "tag": "p",
+          "text": "Além da navegação entre telas, foram utilizadas interações por toque e gestos, como o recurso de deslizar uma movimentação para excluí-la. Também foram utilizadas animações com a biblioteca Moti, tornando a interação com o aplicativo mais dinâmica."
+        },
+        {
+          "tag": "h3",
+          "text": "07 — Tecnologias e conceitos"
+        },
+        {
+          "tag": "p",
+          "text": "React Native"
+        },
+        {
+          "tag": "p",
+          "text": "JavaScript"
+        },
+        {
+          "tag": "p",
+          "text": "Reative Native"
+        },
+        {
+          "tag": "p",
+          "text": "Firebase"
+        },
+        {
+          "tag": "p",
+          "text": "Cloud Firestore"
+        },
+        {
+          "tag": "p",
+          "text": "Firebase Authentication"
+        },
+        {
+          "tag": "p",
+          "text": "React Navigation"
+        },
+        {
+          "tag": "h3",
+          "text": "08 — Objetivo"
+        },
+        {
+          "tag": "p",
+          "text": "O objetivo do projeto foi desenvolver uma aplicação mobile capaz de simplificar o controle das finanças pessoais, aplicando na prática conceitos de desenvolvimento mobile, gerenciamento de estado, navegação, autenticação e integração com banco de dados."
+        },
+        {
+          "tag": "p",
+          "text": "Além da construção da interface, o projeto permitiu trabalhar com a integração entre aplicação mobile e serviços em nuvem, criando uma experiência na qual os dados financeiros são armazenados e associados ao usuário autenticado."
+        },
+        {
+          "tag": "h3",
+          "text": "Trabalho em equipe"
+        },
+        {
+          "tag": "p",
+          "text": "O NaCarteira foi desenvolvido em equipe, envolvendo diferentes integrantes no processo de construção da aplicação. O projeto proporcionou experiência com desenvolvimento colaborativo, divisão de responsabilidades e integração das diferentes partes de uma aplicação mobile."
+        }
+      ],
+      "url": ""
+    }
+  ],
+  "stack": [
+    {
+      "name": "Framer",
+      "subtitle": "Web Design",
+      "description": "O Framer é minha principal ferramenta para criar protótipos interativos. Utilizo a plataforma para dar vida aos designs, permitindo que as partes envolvidas experimentem o fluxo de navegação e as interações antes do início do desenvolvimento. Ele é uma ferramenta essencial para aprimorar a experiência do usuário.",
+      "icon": "stack-0.svg"
+    },
+    {
+      "name": "HTML 5",
+      "subtitle": "Structure and Content",
+      "description": "HTML5 é a base do meu desenvolvimento web. Utilizo a tecnologia para estruturar o conteúdo das aplicações, garantindo uma organização semântica e acessível. Ele serve como fundamento para a construção das interfaces e para a integração com os demais elementos do desenvolvimento front-end.",
+      "icon": "stack-1.svg"
+    },
+    {
+      "name": "CSS 3",
+      "subtitle": "Visual Styling",
+      "description": "CSS3 é minha principal ferramenta para estilização e construção de layouts. Utilizo a tecnologia para criar interfaces visualmente atrativas, trabalhando com elementos como fontes, cores, espaçamentos e posicionamento. Também utilizo CSS para desenvolver layouts responsivos, garantindo uma boa experiência em diferentes tamanhos de tela.",
+      "icon": "stack-2.svg"
+    },
+    {
+      "name": "JavaScript",
+      "subtitle": "Dynamic Interactions",
+      "description": "JavaScript é uma das minhas principais linguagens para desenvolvimento web. Utilizo a linguagem para criar interfaces interativas e adicionar comportamentos dinâmicos às aplicações, trabalhando com eventos, lógica e manipulação de elementos para proporcionar experiências mais funcionais e responsivas.",
+      "icon": "stack-3.svg"
+    },
+    {
+      "name": "Java",
+      "subtitle": "Object-Oriented Development",
+      "description": "Java é uma das linguagens que utilizo no desenvolvimento de aplicações. Tenho experiência com seus fundamentos de programação e orientação a objetos, utilizando a linguagem para desenvolver soluções estruturadas e aplicar conceitos de lógica e organização de código.",
+      "icon": "stack-4.svg"
+    },
+    {
+      "name": "C++",
+      "subtitle": "Algorithms & Data Structures",
+      "description": "C++ é uma das linguagens que utilizo para desenvolver soluções e trabalhar com estruturas de dados. Tenho experiência com conceitos de programação, algoritmos e gerenciamento de dados, utilizando a linguagem para desenvolver aplicações eficientes e resolver problemas computacionais.",
+      "icon": "stack-5.svg"
+    },
+    {
+      "name": "Python",
+      "subtitle": "Versatile Programming",
+      "description": "Python é uma das minhas principais linguagens de programação. Utilizo a linguagem em diferentes áreas, incluindo desenvolvimento back-end, inteligência artificial, Machine Learning e análise de dados. Sua versatilidade permite desenvolver desde aplicações web até soluções voltadas para processamento e análise de informações.",
+      "icon": "stack-6.svg"
+    },
+    {
+      "name": "MySQL",
+      "subtitle": "Database Management",
+      "description": "MySQL é uma das tecnologias que utilizo para gerenciamento de bancos de dados. Trabalho com armazenamento, organização e consulta de informações, utilizando bancos de dados relacionais para estruturar e manter os dados das aplicações de forma eficiente.",
+      "icon": "stack-7.svg"
+    },
+    {
+      "name": "PowerBI",
+      "subtitle": "Data Visualization",
+      "description": "Power BI é uma das ferramentas que utilizo para análise e visualização de dados. Utilizo a plataforma para transformar dados em informações visuais, criando relatórios e dashboards que facilitam a interpretação de informações e a identificação de padrões.",
+      "icon": "stack-8.svg"
+    },
+    {
+      "name": "Office",
+      "subtitle": "Productivity & Documentation",
+      "description": "Microsoft Office faz parte das ferramentas que utilizo para organização e produtividade. Tenho experiência com ferramentas como Word, Excel e PowerPoint, utilizadas para criação de documentos, organização de informações, apresentações e atividades relacionadas a projetos e trabalho.",
+      "icon": "stack-9.svg"
+    },
+    {
+      "name": "TypeScript",
+      "subtitle": "Typed Web Development",
+      "description": "TypeScript é uma linguagem baseada em JavaScript que adiciona tipagem estática ao desenvolvimento. Utilizo para criar aplicações mais organizadas, previsíveis e fáceis de manter.",
+      "icon": "stack-10.svg"
+    },
+    {
+      "name": "React Native",
+      "subtitle": "Mobile Development",
+      "description": "React Native é utilizado para desenvolvimento de aplicações mobile. Utilizo a tecnologia para criar interfaces e funcionalidades para dispositivos móveis com componentes reutilizáveis.",
+      "icon": "stack-11.svg"
+    },
+    {
+      "name": "Linear",
+      "subtitle": "Project Management",
+      "description": "Linear é uma ferramenta de gerenciamento de projetos e tarefas. Utilizo para acompanhar demandas, organizar atividades e visualizar o progresso do desenvolvimento.",
+      "icon": "stack-12.svg"
+    },
+    {
+      "name": "Git",
+      "subtitle": "Version Control",
+      "description": "Git é uma ferramenta de controle de versão utilizada para acompanhar alterações no código. Utilizo para criar branches, registrar mudanças e organizar diferentes versões dos projetos.",
+      "icon": "stack-13.svg"
+    },
+    {
+      "name": "GitHub",
+      "subtitle": "Project Management",
+      "description": "GitHub é uma plataforma para hospedagem e colaboração em projetos de código. Utilizo para armazenar repositórios, trabalhar com branches e colaborar no desenvolvimento através de commits e pull requests.",
+      "icon": "stack-14.svg"
+    },
+    {
+      "name": "VS Code",
+      "subtitle": "Code Editor",
+      "description": "Visual Studio Code é meu principal editor de código. Utilizo para desenvolver, organizar e editar projetos em diferentes linguagens e tecnologias, contando também com extensões que auxiliam no processo de desenvolvimento.",
+      "icon": "stack-15.svg"
+    }
+  ],
+  "experiences": [
+    {
+      "title": "PIBIC (Iniciação Científica)",
+      "organization": "IFSudesteMG",
+      "period": "2026-presente",
+      "description": "Desenvolvimento de uma plataforma web para gerenciamento de torneios de xadrez com pareamento automático pelo sistema suíço, utilizando Python (framework django) e integração com banco de dados. O sistema foi projetado para gerar emparelhamentos matematicamente mais precisos entre jogadores de níveis semelhantes."
+    },
+    {
+      "title": "Estágio Supervisionado de TI",
+      "organization": "Prefeitura Municipal de Rio Pomba",
+      "period": "2025-presente",
+      "description": "Atuação na manutenção e instalação de componentes externos em diversos órgãos públicos do município, com foco em suporte técnico, atendimento a demandas, diagnóstico e resolução de problemas de infraestrutura e equipamentos."
+    },
+    {
+      "title": "Bolsista IFSudesteMG",
+      "organization": "IFSudesteMG",
+      "period": "2025-2026",
+      "description": "Desenvolvimento de um projeto teórico de IA generativa voltado à criação de um manual prático sobre o uso ético e benéfico dessa tecnologia na educação, promovendo o aprimoramento dos estudos e a aplicação eficiente da IA em contextos pedagógicos."
+    },
+    {
+      "title": "Bolsista IFMG",
+      "organization": "Instituto Federal de Minas Gerais",
+      "period": "2023",
+      "description": "Desenvolvimento de uma plataforma web para gerenciamento de torneios de xadrez com pareamento automático pelo sistema suíço, utilizando Python (framework django) e integração com banco de dados. O sistema foi projetado para gerar emparelhamentos matematicamente mais precisos entre jogadores de níveis semelhantes."
+    }
+  ]
+}

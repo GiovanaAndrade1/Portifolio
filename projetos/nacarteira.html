@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sou desenvolvedora de software apaixonada por transformar ideias em soluções digitais funcionais e intuitivas.">
+  <meta name="theme-color" content="#ffffff">
+  <title>NaCarteira | Giovana Andrade</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <script src="../assets/js/main.js" defer></script>
+  <noscript><style>.navigation-panel { display: flex; } .menu-toggle { display: none; }</style></noscript>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="site-shell">
+    <header class="sidebar">
+      <a class="identity" href="../index.html"><img src="../assets/images/giovana.jpeg" alt="" width="48" height="48"><span><strong>Giovana Andrade</strong><span>Software Developer</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navegacao"><span aria-hidden="true">☰</span><span class="sr-only">Abrir menu</span></button>
+      <div class="navigation-panel" id="navegacao"><nav aria-label="Navegação principal"><a href="../index.html" ><span aria-hidden="true">⌂</span>Home</a><a href="../sobre.html" ><span aria-hidden="true">○</span>Sobre mim</a><a href="../projetos.html" aria-current="page"><span aria-hidden="true">▦</span>Projetos</a><a href="../stack.html" ><span aria-hidden="true">◈</span>Stack</a><a href="../contato.html" ><span aria-hidden="true">↗</span>Contato</a></nav><div class="social-links" aria-label="Redes sociais"><a href="https://github.com/GiovanaAndrade1" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=ferreirapoc@gmail.com" target="_blank" rel="noopener noreferrer">E-mail ↗</a><a href="https://www.linkedin.com/in/-giovanaandrade" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></div>
+    </header>
+    <div class="main-column">
+      <main id="conteudo"><a class="back-link" href="../projetos.html">← Voltar</a><section class="intro project-intro"><h1>NaCarteira</h1><span class="eyebrow">Mobile</span></section><a class="button" href="../contato.html">Conversar sobre o projeto <span aria-hidden="true">→</span></a><img class="detail-image" src="../assets/images/nacarteira.jpg" alt="NaCarteira" width="1000" height="600"><article class="prose"><h2>01 — O problema</h2>
+<p>Organizar as finanças pessoais pode ser difícil quando as pessoas não possuem uma forma simples de acompanhar seus gastos, entradas e movimentações financeiras.</p>
+<p>Pensando nisso, o NaCarteira foi desenvolvido como uma aplicação mobile voltada para facilitar o controle financeiro, permitindo que o usuário registre suas movimentações e acompanhe sua situação financeira de maneira mais organizada.</p>
+<h2>02 — A solução</h2>
+<p>O NaCarteira é um aplicativo desenvolvido para gerenciamento de finanças pessoais, permitindo registrar entradas e despesas e acompanhar as movimentações realizadas.</p>
+<p>A aplicação possui uma tela inicial que apresenta um resumo das movimentações e calcula os valores de entradas e despesas, além de permitir adicionar novos registros informando descrição, valor, data e tipo da movimentação.</p>
+<h2>03 — Desenvolvimento</h2>
+<p>O aplicativo foi desenvolvido utilizando React Native, permitindo a criação de uma aplicação mobile com uma estrutura baseada em componentes e diferentes telas de navegação.</p>
+<p>A aplicação utiliza React Navigation para organizar a navegação entre as páginas e componentes reutilizáveis para elementos como cabeçalho, saldo, ações e movimentações.</p>
+<p>Também foram utilizadas animações para tornar algumas interações mais fluidas, incluindo transições durante o cadastro de movimentações e interações por gesto.</p>
+<h2>04 — Banco de dados e autenticação</h2>
+<p>Para armazenar as informações, o projeto utiliza o Firebase, com o Cloud Firestore como banco de dados.</p>
+<p>Os dados das movimentações são organizados de acordo com cada usuário autenticado, permitindo que cada conta tenha acesso às suas próprias informações financeiras.</p>
+<p>A autenticação também utiliza o Firebase, enquanto o AsyncStorage é utilizado para manter a persistência da sessão no ambiente mobile.</p>
+<h2>05 — Funcionalidades</h2>
+<p>Entre as funcionalidades implementadas estão:</p>
+<p>Cadastro de entradas e despesas</p>
+<p>Registro de descrição, valor e data</p>
+<p>Classificação entre entrada e despesa</p>
+<p>Cálculo do total de entradas</p>
+<p>Cálculo do total de despesas</p>
+<p>Listagem das últimas movimentações</p>
+<p>Exclusão de movimentações por gesto</p>
+<p>Autenticação de usuários</p>
+<p>Persistência dos dados no Firebase</p>
+<p>Navegação entre diferentes áreas do aplicativo</p>
+<p>Seleção de datas</p>
+<p>Interface com animações e transições</p>
+<h2>06 — Experiência mobile</h2>
+<p>Um dos pontos trabalhados no projeto foi a criação de uma experiência adequada para dispositivos móveis.</p>
+<p>Além da navegação entre telas, foram utilizadas interações por toque e gestos, como o recurso de deslizar uma movimentação para excluí-la. Também foram utilizadas animações com a biblioteca Moti, tornando a interação com o aplicativo mais dinâmica.</p>
+<h2>07 — Tecnologias e conceitos</h2>
+<p>React Native</p>
+<p>JavaScript</p>
+<p>Reative Native</p>
+<p>Firebase</p>
+<p>Cloud Firestore</p>
+<p>Firebase Authentication</p>
+<p>React Navigation</p>
+<h2>08 — Objetivo</h2>
+<p>O objetivo do projeto foi desenvolver uma aplicação mobile capaz de simplificar o controle das finanças pessoais, aplicando na prática conceitos de desenvolvimento mobile, gerenciamento de estado, navegação, autenticação e integração com banco de dados.</p>
+<p>Além da construção da interface, o projeto permitiu trabalhar com a integração entre aplicação mobile e serviços em nuvem, criando uma experiência na qual os dados financeiros são armazenados e associados ao usuário autenticado.</p>
+<h2>Trabalho em equipe</h2>
+<p>O NaCarteira foi desenvolvido em equipe, envolvendo diferentes integrantes no processo de construção da aplicação. O projeto proporcionou experiência com desenvolvimento colaborativo, divisão de responsabilidades e integração das diferentes partes de uma aplicação mobile.</p></article><section class="section"><h2>Outros projetos</h2><div class="project-grid">
+    <a class="project-card" href="../projetos/glaucoma.html">
+      <div class="project-image"><img src="../assets/images/glaucoma.jpg" alt="Avaliação de métodos computacionais para a detecção do glaucoma em imagens retinianas" loading="lazy" width="800" height="480"><span class="project-arrow" aria-hidden="true">↗</span></div>
+      <div class="project-info"><span class="eyebrow">Machine Learning</span><h3>Avaliação de métodos computacionais para a detecção do glaucoma em imagens retinianas</h3></div>
+    </a>
+    <a class="project-card" href="../projetos/dos.html">
+      <div class="project-image"><img src="../assets/images/dos.png" alt="Detecção de possíveis ataques de negação de serviço (DoS)" loading="lazy" width="800" height="480"><span class="project-arrow" aria-hidden="true">↗</span></div>
+      <div class="project-info"><span class="eyebrow">CyberSecurity</span><h3>Detecção de possíveis ataques de negação de serviço (DoS)</h3></div>
+    </a></div></section></main>
+      <footer><span>© Giovana Andrade. Todos os direitos reservados.</span><div><a href="../privacidade.html">Privacidade</a><a href="../cookies.html">Cookies</a></div></footer>
+    </div>
+  </div>
+</body>
+</html>
