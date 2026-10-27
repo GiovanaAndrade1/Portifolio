@@ -4,7 +4,7 @@ import json,re
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = json.loads((ROOT / 'content/site.json').read_text(encoding='utf-8'))
-NAV = [('index.html', 'Home', '⌂'), ('sobre.html', 'Sobre mim', '○'), ('projetos.html', 'Projetos', '▦'), ('stack.html', 'Stack', '◈'), ('contato.html', 'Contato', '↗')]
+NAV = [('index.html', 'Home', 'home'), ('sobre.html', 'Sobre mim', 'user'), ('projetos.html', 'Projetos', 'projects'), ('stack.html', 'Stack', 'stack'), ('contato.html', 'Contato', 'contact')]
 
 def e(value):
     return escape(str(value), quote=True)
@@ -35,8 +35,8 @@ def stack_cards(items, detailed=False):
     return '<div class="stack-grid">' + ''.join(f'''<article class="stack-card"><div class="stack-heading"><span class="tech-icon" aria-hidden="true"><img src="assets/icons/{e(t['icon'])}" alt="" width="44" height="44" loading="lazy"></span><div><h{2 if detailed else 3}>{e(t['name'])}</h{2 if detailed else 3}><span class="muted">{e(t['subtitle'])}</span></div></div>{f'<p>{e(t["description"])}</p>' if detailed else ''}</article>''' for t in items) + '</div>'
 
 def page(filename, title, body, active='index.html', prefix=''):
-    nav = ''.join(f'<a href="{prefix}{url}" {"aria-current=\"page\"" if active == url else ""}><span aria-hidden="true">{icon}</span>{label}</a>' for url,label,icon in NAV)
-    social = social_link('github', 'GitHub', DATA['github'], prefix) + social_link('gmail', 'Gmail', 'https://mail.google.com/mail/?view=cm&fs=1&to=' + DATA['email'], prefix) + social_link('linkedin', 'LinkedIn', DATA['linkedin'], prefix)
+    nav = ''.join(f'<a href="{prefix}{url}" {"aria-current=\"page\"" if active == url else ""}><img class="nav-icon" src="{prefix}assets/icons/{icon}.svg" alt="" width="18" height="18">{label}</a>' for url,label,icon in NAV)
+    social = social_link('github', 'GitHub', DATA['github'], prefix) + social_link('gmail', 'E-mail', 'https://mail.google.com/mail/?view=cm&fs=1&to=' + DATA['email'], prefix) + social_link('linkedin', 'LinkedIn', DATA['linkedin'], prefix)
     html = f'''<!doctype html>
 <html lang="pt-BR">
 <head>
@@ -91,7 +91,7 @@ def build():
         <button class="button" type="submit"><img class="social-icon" src="assets/icons/gmail.svg" alt="" width="20" height="20">Abrir no Gmail</button><p id="form-status" role="status" aria-live="polite"></p>
         <noscript><p>Escreva diretamente para <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to={e(DATA['email'])}" target="_blank" rel="noopener noreferrer">{e(DATA['email'])}</a>.</p></noscript>
       </form>
-    </section><section class="section"><h2>Contato</h2><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to={e(DATA['email'])}" target="_blank" rel="noopener noreferrer">{e(DATA['email'])}</a><h2 class="social-title">Social</h2><div class="contact-social">{social_link("github", "GitHub", DATA["github"])}{social_link("linkedin", "LinkedIn", DATA["linkedin"])}{social_link("gmail", "Gmail", "https://mail.google.com/mail/?view=cm&fs=1&to=" + DATA["email"])}</div></section>'''
+    </section><section class="section"><h2>Contato</h2>{social_link("gmail", DATA["email"], "https://mail.google.com/mail/?view=cm&fs=1&to=" + DATA["email"])}<h2 class="social-title">Social</h2><div class="contact-social">{social_link("github", "GitHub", DATA["github"])}{social_link("linkedin", "LinkedIn", DATA["linkedin"])}</div></section>'''
     page('contato.html','Contato',contact,'contato.html')
     for project in DATA['projects']:
         href = project['url']
