@@ -781,6 +781,79 @@
         }
       ],
       "url": ""
+    },
+    {
+      "slug": "classificacao-sindromes",
+      "category": "Machine Learning",
+      "image": "classificacao-sindromes.png",
+      "title": "Classificação de síndromes com Machine Learning",
+      "url": "https://github.com/GiovanaAndrade1/Test_apollo_solutions",
+      "body": [
+        {
+          "tag": "h3",
+          "text": "01 — O contexto"
+        },
+        {
+          "tag": "p",
+          "text": "Desenvolvi este projeto como teste técnico em um processo seletivo, trabalhando com a classificação de síndromes a partir de embeddings de imagens. Com um prazo curto, foquei na construção de um pipeline funcional e na comparação das escolhas de modelagem."
+        },
+        {
+          "tag": "h3",
+          "text": "02 — Preparação e exploração dos dados"
+        },
+        {
+          "tag": "p",
+          "text": "O fluxo começa com o carregamento e a preparação dos embeddings, representações numéricas utilizadas como entrada para o classificador. Os rótulos são codificados para a classificação, e a distribuição das classes é explorada para compreender os dados."
+        },
+        {
+          "tag": "p",
+          "text": "Utilizei t-SNE para visualizar os embeddings em duas dimensões e observar a distribuição das amostras entre as diferentes classes. O gráfico ajuda na exploração dos dados, sem substituir a avaliação do modelo."
+        },
+        {
+          "tag": "h3",
+          "text": "03 — Classificação com KNN"
+        },
+        {
+          "tag": "p",
+          "text": "Implementei a classificação com K-Nearest Neighbors (KNN), comparando as distâncias euclidiana e cosseno. O número de vizinhos varia de 1 a 15, permitindo analisar como esse parâmetro influencia o comportamento do classificador."
+        },
+        {
+          "tag": "h3",
+          "text": "04 — Avaliação dos modelos"
+        },
+        {
+          "tag": "p",
+          "text": "A avaliação utiliza validação cruzada estratificada em 10 partições. O pipeline calcula AUC, F1-Macro e Top-k Accuracy e gera gráficos comparativos, além de uma tabela-resumo com as melhores configurações para cada métrica e distância."
+        },
+        {
+          "tag": "p",
+          "text": "A F1-Macro atribui o mesmo peso a cada classe, contribuindo para analisar o desempenho além das classes mais frequentes. As métricas são observadas em conjunto para comparar as configurações avaliadas."
+        },
+        {
+          "tag": "h3",
+          "text": "05 — Organização do projeto"
+        },
+        {
+          "tag": "p",
+          "text": "O código está organizado em módulos de processamento dos dados, visualização, classificação e avaliação. Um ponto de entrada executa o fluxo e salva os gráficos em PNG e a tabela de resultados em CSV."
+        },
+        {
+          "tag": "h3",
+          "text": "06 — Tecnologias e conceitos"
+        },
+        {
+          "tag": "p",
+          "text": "Python, NumPy, pandas, scikit-learn, Matplotlib e Seaborn. Embeddings de imagens, KNN, distância euclidiana, distância cosseno, validação cruzada estratificada, t-SNE e métricas de classificação."
+        },
+        {
+          "tag": "h3",
+          "text": "07 — Aprendizados"
+        },
+        {
+          "tag": "p",
+          "text": "O projeto contribuiu para aprofundar conhecimentos em classificação e avaliação de modelos, que também se relacionam ao meu projeto principal: a classificação de glaucoma em imagens retinianas com inteligência artificial."
+        }
+      ]
     }
   ],
   "stack": [

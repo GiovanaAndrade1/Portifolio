@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sou desenvolvedora de software apaixonada por transformar ideias em soluções digitais funcionais e intuitivas.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Classificação de síndromes com Machine Learning | Giovana Andrade</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <script src="../assets/js/main.js" defer></script>
+  <noscript><style>.navigation-panel { display: flex; } .menu-toggle { display: none; }</style></noscript>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="site-shell">
+    <header class="sidebar">
+      <a class="identity" href="../index.html"><img src="../assets/images/giovana.jpeg" alt="" width="48" height="48"><span><strong>Giovana Andrade</strong><span>Software Developer</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navegacao"><span aria-hidden="true">☰</span><span class="sr-only">Abrir menu</span></button>
+      <div class="navigation-panel" id="navegacao"><nav aria-label="Navegação principal"><a href="../index.html" ><img class="nav-icon" src="../assets/icons/home.svg" alt="" width="18" height="18">Home</a><a href="../sobre.html" ><img class="nav-icon" src="../assets/icons/user.svg" alt="" width="18" height="18">Sobre mim</a><a href="../recomendacoes.html" ><img class="nav-icon" src="../assets/icons/recommendations.svg" alt="" width="18" height="18">Recomendações</a><a href="../projetos.html" aria-current="page"><img class="nav-icon" src="../assets/icons/projects.svg" alt="" width="18" height="18">Projetos</a><a href="../stack.html" ><img class="nav-icon" src="../assets/icons/stack.svg" alt="" width="18" height="18">Stack</a><a href="../contato.html" ><img class="nav-icon" src="../assets/icons/contact.svg" alt="" width="18" height="18">Contato</a></nav><div class="social-links" aria-label="Redes sociais"><a class="social-link" href="https://github.com/GiovanaAndrade1" target="_blank" rel="noopener noreferrer"><img class="social-icon" src="../assets/icons/github.svg" alt="" width="20" height="20"><span>GitHub</span></a><a class="social-link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=ferreirapoc@gmail.com" target="_blank" rel="noopener noreferrer"><img class="social-icon" src="../assets/icons/gmail.svg" alt="" width="20" height="20"><span>E-mail</span></a><a class="social-link" href="https://www.linkedin.com/in/-giovanaandrade" target="_blank" rel="noopener noreferrer"><img class="social-icon" src="../assets/icons/linkedin.svg" alt="" width="20" height="20"><span>LinkedIn</span></a></div></div>
+    </header>
+    <div class="main-column">
+      <main id="conteudo"><a class="back-link" href="../projetos.html">← Voltar</a><section class="intro project-intro"><h1>Classificação de síndromes com Machine Learning</h1><span class="eyebrow">Machine Learning</span></section><a class="button" href="https://github.com/GiovanaAndrade1/Test_apollo_solutions" target="_blank" rel="noopener noreferrer">Visualizar projeto <span aria-hidden="true">↗</span></a><img class="detail-image" src="../assets/images/classificacao-sindromes.png" alt="Classificação de síndromes com Machine Learning" width="1000" height="600"><article class="prose"><h2>01 — O contexto</h2>
+<p>Desenvolvi este projeto como teste técnico em um processo seletivo, trabalhando com a classificação de síndromes a partir de embeddings de imagens. Com um prazo curto, foquei na construção de um pipeline funcional e na comparação das escolhas de modelagem.</p>
+<h2>02 — Preparação e exploração dos dados</h2>
+<p>O fluxo começa com o carregamento e a preparação dos embeddings, representações numéricas utilizadas como entrada para o classificador. Os rótulos são codificados para a classificação, e a distribuição das classes é explorada para compreender os dados.</p>
+<p>Utilizei t-SNE para visualizar os embeddings em duas dimensões e observar a distribuição das amostras entre as diferentes classes. O gráfico ajuda na exploração dos dados, sem substituir a avaliação do modelo.</p>
+<h2>03 — Classificação com KNN</h2>
+<p>Implementei a classificação com K-Nearest Neighbors (KNN), comparando as distâncias euclidiana e cosseno. O número de vizinhos varia de 1 a 15, permitindo analisar como esse parâmetro influencia o comportamento do classificador.</p>
+<h2>04 — Avaliação dos modelos</h2>
+<p>A avaliação utiliza validação cruzada estratificada em 10 partições. O pipeline calcula AUC, F1-Macro e Top-k Accuracy e gera gráficos comparativos, além de uma tabela-resumo com as melhores configurações para cada métrica e distância.</p>
+<p>A F1-Macro atribui o mesmo peso a cada classe, contribuindo para analisar o desempenho além das classes mais frequentes. As métricas são observadas em conjunto para comparar as configurações avaliadas.</p>
+<h2>05 — Organização do projeto</h2>
+<p>O código está organizado em módulos de processamento dos dados, visualização, classificação e avaliação. Um ponto de entrada executa o fluxo e salva os gráficos em PNG e a tabela de resultados em CSV.</p>
+<h2>06 — Tecnologias e conceitos</h2>
+<p>Python, NumPy, pandas, scikit-learn, Matplotlib e Seaborn. Embeddings de imagens, KNN, distância euclidiana, distância cosseno, validação cruzada estratificada, t-SNE e métricas de classificação.</p>
+<h2>07 — Aprendizados</h2>
+<p>O projeto contribuiu para aprofundar conhecimentos em classificação e avaliação de modelos, que também se relacionam ao meu projeto principal: a classificação de glaucoma em imagens retinianas com inteligência artificial.</p></article><section class="section"><h2>Outros projetos</h2><div class="project-grid">
+    <a class="project-card" href="../projetos/glaucoma.html">
+      <div class="project-image"><img src="../assets/images/glaucoma.jpg" alt="Avaliação de métodos computacionais para a detecção do glaucoma em imagens retinianas" loading="lazy" width="800" height="480"><span class="project-arrow" aria-hidden="true">↗</span></div>
+      <div class="project-info"><span class="eyebrow">Machine Learning</span><h3>Avaliação de métodos computacionais para a detecção do glaucoma em imagens retinianas</h3></div>
+    </a>
+    <a class="project-card" href="../projetos/dos.html">
+      <div class="project-image"><img src="../assets/images/dos.png" alt="Detecção de possíveis ataques de negação de serviço (DoS)" loading="lazy" width="800" height="480"><span class="project-arrow" aria-hidden="true">↗</span></div>
+      <div class="project-info"><span class="eyebrow">CyberSecurity</span><h3>Detecção de possíveis ataques de negação de serviço (DoS)</h3></div>
+    </a></div></section></main>
+      <footer><span>© Giovana Andrade. Todos os direitos reservados.</span><div><a href="../privacidade.html">Privacidade</a><a href="../cookies.html">Cookies</a></div></footer>
+    </div>
+  </div>
+</body>
+</html>

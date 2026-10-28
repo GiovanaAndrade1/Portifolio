@@ -102,7 +102,7 @@ def build():
         page(f'projetos/{project["slug"]}.html',project['title'],body,'projetos.html','../')
     page('privacidade.html','Privacidade',intro('Privacidade') + '<div class="prose"><p>Este portfólio estático não possui cadastro, ferramentas de análise de acesso ou armazenamento de dados pessoais no navegador.</p><p>O formulário abre o Gmail no navegador com os dados informados na mensagem. O envio só ocorre quando você o confirma no Gmail. O serviço segue a política de privacidade do Google. As informações enviadas por e-mail serão utilizadas para responder ao seu contato.</p><p>Links para plataformas externas seguem as políticas de privacidade dessas plataformas.</p></div>')
     page('cookies.html','Cookies',intro('Cookies') + '<div class="prose"><p>Esta versão estática do portfólio não utiliza cookies, ferramentas de rastreamento ou armazenamento local. As imagens e estilos são carregados da própria pasta do site.</p><p>Ao acessar links externos, consulte a política de cookies do respectivo serviço.</p></div>')
-    print('14 páginas HTML geradas com sucesso.')
+    print(f'{len(DATA["projects"]) + 8} páginas HTML geradas com sucesso.')
 
 if __name__ == '__main__':
     build()
