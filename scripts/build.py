@@ -4,7 +4,7 @@ import json,re
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = json.loads((ROOT / 'content/site.json').read_text(encoding='utf-8'))
-NAV = [('index.html', 'Home', 'home'), ('sobre.html', 'Sobre mim', 'user'), ('projetos.html', 'Projetos', 'projects'), ('stack.html', 'Stack', 'stack'), ('contato.html', 'Contato', 'contact')]
+NAV = [('index.html', 'Home', 'home'), ('sobre.html', 'Sobre mim', 'user'), ('recomendacoes.html', 'Recomendações', 'recommendations'), ('projetos.html', 'Projetos', 'projects'), ('stack.html', 'Stack', 'stack'), ('contato.html', 'Contato', 'contact')]
 
 def e(value):
     return escape(str(value), quote=True)
@@ -80,6 +80,8 @@ def build():
     about = DATA['about']
     experiences = '<section class="prose"><h2>Experiências</h2>' + ''.join(f'<article class="experience"><h3>{e(x["title"])}</h3><div class="experience-meta"><span>{e(x["organization"])}</span><span>{e(x["period"])}</span></div><p>{e(x["description"])}</p></article>' for x in DATA['experiences']) + '</section>'
     page('sobre.html','Sobre mim', '<div class="about-hero">' + intro(about[0]['text'],about[1]['text']) + '<img class="about-photo" src="assets/images/giovana.jpeg" alt="Giovana Andrade" width="1200" height="1600"></div>' + '<div class="prose">' + blocks(about[2:]) + '</div>' + experiences + button('Se interessou?','contato.html'),'sobre.html')
+    recommendations = intro('Recomendações', 'Um espaço para compartilhar recomendações sobre meu trabalho e minha trajetória.') + '<section class="recommendations-empty" aria-labelledby="recommendations-empty-title"><img src="assets/icons/recommendations.svg" alt="" width="32" height="32"><h2 id="recommendations-empty-title">Recomendações em breve</h2><p>Este espaço será atualizado com novas recomendações.</p></section>'
+    page('recomendacoes.html', 'Recomendações', recommendations, 'recomendacoes.html')
     page('stack.html','Minha stack',intro('Minhas Skills Stacks:') + stack_cards(DATA['stack'],True),'stack.html')
     contact = intro('Vamos conversar!','Sinta-se à vontade para entrar em contato caso tenha interesse no meu perfil ou alguma oportunidade profissional. Responderei o mais breve possível.') + f'''
     <section class="section contact-section"><h2>Entre em contato</h2>
@@ -100,7 +102,7 @@ def build():
         page(f'projetos/{project["slug"]}.html',project['title'],body,'projetos.html','../')
     page('privacidade.html','Privacidade',intro('Privacidade') + '<div class="prose"><p>Este portfólio estático não possui cadastro, ferramentas de análise de acesso ou armazenamento de dados pessoais no navegador.</p><p>O formulário abre o Gmail no navegador com os dados informados na mensagem. O envio só ocorre quando você o confirma no Gmail. O serviço segue a política de privacidade do Google. As informações enviadas por e-mail serão utilizadas para responder ao seu contato.</p><p>Links para plataformas externas seguem as políticas de privacidade dessas plataformas.</p></div>')
     page('cookies.html','Cookies',intro('Cookies') + '<div class="prose"><p>Esta versão estática do portfólio não utiliza cookies, ferramentas de rastreamento ou armazenamento local. As imagens e estilos são carregados da própria pasta do site.</p><p>Ao acessar links externos, consulte a política de cookies do respectivo serviço.</p></div>')
-    print('13 páginas HTML geradas com sucesso.')
+    print('14 páginas HTML geradas com sucesso.')
 
 if __name__ == '__main__':
     build()
