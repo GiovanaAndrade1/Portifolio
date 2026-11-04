@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sou desenvolvedora de software apaixonada por transformar ideias em soluções digitais funcionais e intuitivas.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Brisa — previsão do tempo | Giovana Andrade</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <script src="../assets/js/main.js" defer></script>
+  <noscript><style>.navigation-panel { display: flex; } .menu-toggle { display: none; }</style></noscript>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="site-shell">
+    <header class="sidebar">
+      <a class="identity" href="../index.html"><img src="../assets/images/giovana.jpeg" alt="" width="48" height="48"><span><strong>Giovana Andrade</strong><span>Software Developer</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navegacao"><span aria-hidden="true">☰</span><span class="sr-only">Abrir menu</span></button>
+      <div class="navigation-panel" id="navegacao"><nav aria-label="Navegação principal"><a href="../index.html" ><img class="nav-icon" src="../assets/icons/home.svg" alt="" width="18" height="18">Home</a><a href="../sobre.html" ><img class="nav-icon" src="../assets/icons/user.svg" alt="" width="18" height="18">Sobre mim</a><a href="../recomendacoes.html" ><img class="nav-icon" src="../assets/icons/recommendations.svg" alt="" width="18" height="18">Recomendações</a><a href="../projetos.html" aria-current="page"><img class="nav-icon" src="../assets/icons/projects.svg" alt="" width="18" height="18">Projetos</a><a href="../stack.html" ><img class="nav-icon" src="../assets/icons/stack.svg" alt="" width="18" height="18">Stack</a><a href="../contato.html" ><img class="nav-icon" src="../assets/icons/contact.svg" alt="" width="18" height="18">Contato</a></nav><div class="social-links" aria-label="Redes sociais"><a class="social-link" href="https://github.com/GiovanaAndrade1" target="_blank" rel="noopener noreferrer"><img class="social-icon" src="../assets/icons/github.svg" alt="" width="20" height="20"><span>GitHub</span></a><a class="social-link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=ferreirapoc@gmail.com" target="_blank" rel="noopener noreferrer"><img class="social-icon" src="../assets/icons/gmail.svg" alt="" width="20" height="20"><span>E-mail</span></a><a class="social-link" href="https://www.linkedin.com/in/-giovanaandrade" target="_blank" rel="noopener noreferrer"><img class="social-icon" src="../assets/icons/linkedin.svg" alt="" width="20" height="20"><span>LinkedIn</span></a></div></div>
+    </header>
+    <div class="main-column">
+      <main id="conteudo"><a class="back-link" href="../projetos.html">← Voltar</a><section class="intro project-intro"><h1>Brisa — previsão do tempo</h1><span class="eyebrow">Desenvolvimento Web</span></section><a class="button" href="https://github.com/GiovanaAndrade1/brisa" target="_blank" rel="noopener noreferrer">Visualizar projeto <span aria-hidden="true">↗</span></a><img class="detail-image" src="../assets/images/brisa.png" alt="Brisa — previsão do tempo" width="1000" height="600"><article class="prose"><h2>01 — A proposta</h2>
+<p>O Brisa é um aplicativo de previsão do tempo com interface em português, desenvolvido com HTML, CSS e JavaScript puro. A proposta é reunir condições atuais e previsões em uma interface responsiva, explorando integração com APIs, manipulação do DOM e programação assíncrona.</p>
+<h2>02 — Busca de cidades e localização</h2>
+<p>Na abertura, o aplicativo consulta a previsão de São Paulo enquanto a localização está pendente ou indisponível. A localização do navegador é opcional e depende da autorização do visitante. A busca manual permite consultar outras cidades.</p>
+<p>A partir de duas letras, a busca apresenta sugestões com cidade, estado e país após uma pausa de 350 ms. Consultas anteriores são canceladas para evitar resultados desatualizados. As opções podem ser percorridas com Tab e selecionadas com Enter.</p>
+<h2>03 — Informações meteorológicas</h2>
+<p>A interface reúne temperatura, sensação térmica, vento, umidade, pôr do sol e probabilidade de chuva. Também apresenta a previsão por hora e para os próximos sete dias, com horários locais da cidade consultada.</p>
+<h2>04 — Integração com APIs</h2>
+<p>O aplicativo utiliza a Open-Meteo para encontrar cidades e consultar dados meteorológicos. A API de geocodificação transforma a busca em opções com coordenadas; essas coordenadas são utilizadas na consulta da previsão.</p>
+<p>As requisições usam programação assíncrona e tratamento de erros. Estados de carregamento e falha são apresentados na interface, sem substituir indisponibilidades da API por dados fictícios. AbortController cancela consultas anteriores quando uma nova busca começa.</p>
+<h2>05 — Organização e interface</h2>
+<p>O projeto separa estrutura, estilos, configuração e lógica em arquivos próprios. O CSS utiliza Grid e Flexbox para adaptar o layout a diferentes telas. Um servidor estático local em Node.js permite executar a aplicação sem instalar dependências.</p>
+<h2>06 — Tecnologias e conceitos</h2>
+<p>HTML5, CSS3, JavaScript, Node.js, Open-Meteo, APIs HTTP, geocodificação, geolocalização opcional, manipulação do DOM, programação assíncrona, tratamento de erros e interface responsiva.</p>
+<h2>07 — Possíveis evoluções</h2>
+<p>O README apresenta como próximos passos testes automatizados persistentes, validação mais robusta das respostas das APIs e publicação da interface. O aplicativo depende de conexão com a internet e da disponibilidade das APIs externas; não possui cache, favoritos ou histórico de cidades.</p></article><section class="section"><h2>Outros projetos</h2><div class="project-grid">
+    <a class="project-card" href="../projetos/glaucoma.html">
+      <div class="project-image"><img src="../assets/images/glaucoma.jpg" alt="Avaliação de métodos computacionais para a detecção do glaucoma em imagens retinianas" loading="lazy" width="800" height="480"><span class="project-arrow" aria-hidden="true">↗</span></div>
+      <div class="project-info"><span class="eyebrow">Machine Learning</span><h3>Avaliação de métodos computacionais para a detecção do glaucoma em imagens retinianas</h3></div>
+    </a>
+    <a class="project-card" href="../projetos/dos.html">
+      <div class="project-image"><img src="../assets/images/dos.png" alt="Detecção de possíveis ataques de negação de serviço (DoS)" loading="lazy" width="800" height="480"><span class="project-arrow" aria-hidden="true">↗</span></div>
+      <div class="project-info"><span class="eyebrow">CyberSecurity</span><h3>Detecção de possíveis ataques de negação de serviço (DoS)</h3></div>
+    </a></div></section></main>
+      <footer><span>© Giovana Andrade. Todos os direitos reservados.</span><div><a href="../privacidade.html">Privacidade</a><a href="../cookies.html">Cookies</a></div></footer>
+    </div>
+  </div>
+</body>
+</html>
