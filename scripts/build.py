@@ -4,7 +4,7 @@ import json,re
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = json.loads((ROOT / 'content/site.json').read_text(encoding='utf-8'))
-NAV = [('index.html', 'Home', 'home'), ('sobre.html', 'Sobre mim', 'user'), ('recomendacoes.html', 'Recomendações', 'recommendations'), ('projetos.html', 'Projetos', 'projects'), ('stack.html', 'Stack', 'stack'), ('contato.html', 'Contato', 'contact')]
+NAV = [('index.html', 'Home', 'home'), ('sobre.html', 'Sobre mim', 'user'), ('recomendacoes.html', 'Recomendações', 'recommendations'), ('certificados.html', 'Certificados', 'certificate'), ('projetos.html', 'Projetos', 'projects'), ('stack.html', 'Stack', 'stack'), ('contato.html', 'Contato', 'contact')]
 
 def e(value):
     return escape(str(value), quote=True)
@@ -33,6 +33,14 @@ def cards(projects, prefix=''):
 
 def stack_cards(items, detailed=False):
     return '<div class="stack-grid">' + ''.join(f'''<article class="stack-card"><div class="stack-heading"><span class="tech-icon" aria-hidden="true"><img src="assets/icons/{e(t['icon'])}" alt="" width="44" height="44" loading="lazy"></span><div><h{2 if detailed else 3}>{e(t['name'])}</h{2 if detailed else 3}><span class="muted">{e(t['subtitle'])}</span></div></div>{f'<p>{e(t["description"])}</p>' if detailed else ''}</article>''' for t in items) + '</div>'
+
+def certificate_cards(items):
+    cards_html = []
+    for item in items:
+        base = 'assets/certificados/' + item['slug']
+        metadata = ' · '.join(value for value in [item['date'], item['hours']] if value)
+        cards_html.append(f'<article class="certificate-card"><a class="certificate-preview" href="{base}.pdf" target="_blank" rel="noopener noreferrer" aria-label="Visualizar certificado: {e(item["title"])}"><img src="{base}.jpg" alt="Prévia do certificado: {e(item["title"])}" loading="lazy" width="1200" height="850"></a><div class="certificate-info"><span class="eyebrow">{e(item["category"])}</span><h2>{e(item["title"])}</h2><p class="certificate-issuer">{e(item["issuer"])}</p><p class="certificate-meta">{e(metadata)}</p><p>{e(item["description"])}</p><div class="certificate-actions"><a href="{base}.pdf" target="_blank" rel="noopener noreferrer">Visualizar PDF <span aria-hidden="true">↗</span></a><a href="{base}.pdf" download>Baixar PDF <span aria-hidden="true">↓</span></a></div></div></article>')
+    return '<div class="certificate-grid">' + ''.join(cards_html) + '</div>'
 
 def page(filename, title, body, active='index.html', prefix=''):
     nav = ''.join(f'<a href="{prefix}{url}" {"aria-current=\"page\"" if active == url else ""}><img class="nav-icon" src="{prefix}assets/icons/{icon}.svg" alt="" width="18" height="18">{label}</a>' for url,label,icon in NAV)
@@ -82,6 +90,7 @@ def build():
     page('sobre.html','Sobre mim', '<div class="about-hero">' + intro(about[0]['text'],about[1]['text']) + '<img class="about-photo" src="assets/images/giovana.jpeg" alt="Giovana Andrade" width="1200" height="1600"></div>' + '<div class="prose">' + blocks(about[2:]) + '</div>' + experiences + button('Se interessou?','contato.html'),'sobre.html')
     recommendations = intro('Recomendações', 'Um espaço para compartilhar recomendações sobre meu trabalho e minha trajetória.') + '<section class="recommendations-empty" aria-labelledby="recommendations-empty-title"><img src="assets/icons/recommendations.svg" alt="" width="32" height="32"><h2 id="recommendations-empty-title">Recomendações em breve</h2><p>Este espaço será atualizado com novas recomendações.</p></section>'
     page('recomendacoes.html', 'Recomendações', recommendations, 'recomendacoes.html')
+    page('certificados.html', 'Certificados', intro('Certificados', 'Cursos, projetos de extensão e reconhecimentos que fazem parte da minha formação.') + certificate_cards(DATA.get('certificates', [])), 'certificados.html')
     page('stack.html','Minha stack',intro('Minhas Skills Stacks:') + stack_cards(DATA['stack'],True),'stack.html')
     contact = intro('Vamos conversar!','Sinta-se à vontade para entrar em contato caso tenha interesse no meu perfil ou alguma oportunidade profissional. Responderei o mais breve possível.') + f'''
     <section class="section contact-section"><h2>Entre em contato</h2>
@@ -102,7 +111,7 @@ def build():
         page(f'projetos/{project["slug"]}.html',project['title'],body,'projetos.html','../')
     page('privacidade.html','Privacidade',intro('Privacidade') + '<div class="prose"><p>Este portfólio estático não possui cadastro, ferramentas de análise de acesso ou armazenamento de dados pessoais no navegador.</p><p>O formulário abre o Gmail no navegador com os dados informados na mensagem. O envio só ocorre quando você o confirma no Gmail. O serviço segue a política de privacidade do Google. As informações enviadas por e-mail serão utilizadas para responder ao seu contato.</p><p>Links para plataformas externas seguem as políticas de privacidade dessas plataformas.</p></div>')
     page('cookies.html','Cookies',intro('Cookies') + '<div class="prose"><p>Esta versão estática do portfólio não utiliza cookies, ferramentas de rastreamento ou armazenamento local. As imagens e estilos são carregados da própria pasta do site.</p><p>Ao acessar links externos, consulte a política de cookies do respectivo serviço.</p></div>')
-    print(f'{len(DATA["projects"]) + 8} páginas HTML geradas com sucesso.')
+    print(f'{len(DATA["projects"]) + 9} páginas HTML geradas com sucesso.')
 
 if __name__ == '__main__':
     build()

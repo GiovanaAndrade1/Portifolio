@@ -1052,5 +1052,52 @@
       "period": "2023",
       "description": "Desenvolvimento de uma plataforma web para gerenciamento de torneios de xadrez com pareamento automático pelo sistema suíço, utilizando Python (framework django) e integração com banco de dados. O sistema foi projetado para gerar emparelhamentos matematicamente mais precisos entre jogadores de níveis semelhantes."
     }
+  ],
+  "certificates": [
+    {
+      "slug": "analise-seguranca-dados",
+      "title": "Análise e segurança de dados em empresas da região",
+      "issuer": "IF Sudeste MG",
+      "category": "Extensão",
+      "hours": "33 horas",
+      "date": "Março a julho de 2026",
+      "description": "Participação como membro da equipe executora do projeto de extensão."
+    },
+    {
+      "slug": "etica-diversidade-computacao",
+      "title": "Para além do código: ética, diversidade e mulheres na computação",
+      "issuer": "IF Sudeste MG",
+      "category": "Extensão",
+      "hours": "33 horas",
+      "date": "Março a julho de 2026",
+      "description": "Participação como membro da equipe executora do projeto de extensão."
+    },
+    {
+      "slug": "formacao-inteligencia-artificial",
+      "title": "Formação Inteligência Artificial: Do Zero ao Avançado (2026)",
+      "issuer": "Udemy",
+      "category": "Curso",
+      "hours": "24,5 horas",
+      "date": "4 de novembro de 2026",
+      "description": "Formação em inteligência artificial ministrada por Andre Iacono."
+    },
+    {
+      "slug": "trabalho-destaque-ia-ensino",
+      "title": "Diretrizes para o uso ético e produtivo da inteligência artificial generativa no ensino",
+      "issuer": "VII Congresso Brasileiro Interdisciplinar em Ciência e Tecnologia",
+      "category": "Reconhecimento",
+      "hours": "",
+      "date": "28 de agosto de 2026",
+      "description": "Segundo melhor trabalho da área temática CEXA — Ciências Exatas e da Terra, desenvolvido em coautoria."
+    },
+    {
+      "slug": "engenharia-prompts",
+      "title": "Engenharia de Prompts com IA: Do Zero ao Avançado",
+      "issuer": "Udemy",
+      "category": "Curso",
+      "hours": "5 horas",
+      "date": "4 de novembro de 2026",
+      "description": "Curso de engenharia de prompts ministrado por Andre Iacono."
+    }
   ]
 }
