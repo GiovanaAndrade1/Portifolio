@@ -1021,6 +1021,12 @@
       "icon": "stack-14.svg"
     },
     {
+      "name": "Docker",
+      "subtitle": "Containers & Development Environments",
+      "description": "Docker permite empacotar aplicações e suas dependências em containers, facilitando a configuração de ambientes de desenvolvimento consistentes e a execução de projetos em diferentes máquinas.",
+      "icon": "docker.svg"
+    },
+    {
       "name": "VS Code",
       "subtitle": "Code Editor",
       "description": "Visual Studio Code é meu principal editor de código. Utilizo para desenvolver, organizar e editar projetos em diferentes linguagens e tecnologias, contando também com extensões que auxiliam no processo de desenvolvimento.",
