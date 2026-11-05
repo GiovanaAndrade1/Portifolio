@@ -33,6 +33,265 @@
   ],
   "projects": [
     {
+      "slug": "brisa",
+      "category": "Desenvolvimento Web",
+      "image": "brisa.png",
+      "title": "Brisa — previsão do tempo",
+      "url": "https://github.com/GiovanaAndrade1/brisa",
+      "body": [
+        {
+          "tag": "h3",
+          "text": "01 — A proposta"
+        },
+        {
+          "tag": "p",
+          "text": "O Brisa é um aplicativo de previsão do tempo com interface em português, desenvolvido com HTML, CSS e JavaScript puro. A proposta é reunir condições atuais e previsões em uma interface responsiva, explorando integração com APIs, manipulação do DOM e programação assíncrona."
+        },
+        {
+          "tag": "h3",
+          "text": "02 — Busca de cidades e localização"
+        },
+        {
+          "tag": "p",
+          "text": "Na abertura, o aplicativo consulta a previsão de São Paulo enquanto a localização está pendente ou indisponível. A localização do navegador é opcional e depende da autorização do visitante. A busca manual permite consultar outras cidades."
+        },
+        {
+          "tag": "p",
+          "text": "A partir de duas letras, a busca apresenta sugestões com cidade, estado e país após uma pausa de 350 ms. Consultas anteriores são canceladas para evitar resultados desatualizados. As opções podem ser percorridas com Tab e selecionadas com Enter."
+        },
+        {
+          "tag": "h3",
+          "text": "03 — Informações meteorológicas"
+        },
+        {
+          "tag": "p",
+          "text": "A interface reúne temperatura, sensação térmica, vento, umidade, pôr do sol e probabilidade de chuva. Também apresenta a previsão por hora e para os próximos sete dias, com horários locais da cidade consultada."
+        },
+        {
+          "tag": "h3",
+          "text": "04 — Integração com APIs"
+        },
+        {
+          "tag": "p",
+          "text": "O aplicativo utiliza a Open-Meteo para encontrar cidades e consultar dados meteorológicos. A API de geocodificação transforma a busca em opções com coordenadas; essas coordenadas são utilizadas na consulta da previsão."
+        },
+        {
+          "tag": "p",
+          "text": "As requisições usam programação assíncrona e tratamento de erros. Estados de carregamento e falha são apresentados na interface, sem substituir indisponibilidades da API por dados fictícios. AbortController cancela consultas anteriores quando uma nova busca começa."
+        },
+        {
+          "tag": "h3",
+          "text": "05 — Organização e interface"
+        },
+        {
+          "tag": "p",
+          "text": "O projeto separa estrutura, estilos, configuração e lógica em arquivos próprios. O CSS utiliza Grid e Flexbox para adaptar o layout a diferentes telas. Um servidor estático local em Node.js permite executar a aplicação sem instalar dependências."
+        },
+        {
+          "tag": "h3",
+          "text": "06 — Tecnologias e conceitos"
+        },
+        {
+          "tag": "p",
+          "text": "HTML5, CSS3, JavaScript, Node.js, Open-Meteo, APIs HTTP, geocodificação, geolocalização opcional, manipulação do DOM, programação assíncrona, tratamento de erros e interface responsiva."
+        },
+        {
+          "tag": "h3",
+          "text": "07 — Possíveis evoluções"
+        },
+        {
+          "tag": "p",
+          "text": "O README apresenta como próximos passos testes automatizados persistentes, validação mais robusta das respostas das APIs e publicação da interface. O aplicativo depende de conexão com a internet e da disponibilidade das APIs externas; não possui cache, favoritos ou histórico de cidades."
+        }
+      ]
+    },
+    {
+      "slug": "classificacao-sindromes",
+      "category": "Machine Learning",
+      "image": "classificacao-sindromes.png",
+      "title": "Classificação de síndromes com Machine Learning",
+      "url": "https://github.com/GiovanaAndrade1/Test_apollo_solutions",
+      "body": [
+        {
+          "tag": "h3",
+          "text": "01 — O contexto"
+        },
+        {
+          "tag": "p",
+          "text": "Desenvolvi este projeto como teste técnico em um processo seletivo, trabalhando com a classificação de síndromes a partir de embeddings de imagens. Com um prazo curto, foquei na construção de um pipeline funcional e na comparação das escolhas de modelagem."
+        },
+        {
+          "tag": "h3",
+          "text": "02 — Preparação e exploração dos dados"
+        },
+        {
+          "tag": "p",
+          "text": "O fluxo começa com o carregamento e a preparação dos embeddings, representações numéricas utilizadas como entrada para o classificador. Os rótulos são codificados para a classificação, e a distribuição das classes é explorada para compreender os dados."
+        },
+        {
+          "tag": "p",
+          "text": "Utilizei t-SNE para visualizar os embeddings em duas dimensões e observar a distribuição das amostras entre as diferentes classes. O gráfico ajuda na exploração dos dados, sem substituir a avaliação do modelo."
+        },
+        {
+          "tag": "h3",
+          "text": "03 — Classificação com KNN"
+        },
+        {
+          "tag": "p",
+          "text": "Implementei a classificação com K-Nearest Neighbors (KNN), comparando as distâncias euclidiana e cosseno. O número de vizinhos varia de 1 a 15, permitindo analisar como esse parâmetro influencia o comportamento do classificador."
+        },
+        {
+          "tag": "h3",
+          "text": "04 — Avaliação dos modelos"
+        },
+        {
+          "tag": "p",
+          "text": "A avaliação utiliza validação cruzada estratificada em 10 partições. O pipeline calcula AUC, F1-Macro e Top-k Accuracy e gera gráficos comparativos, além de uma tabela-resumo com as melhores configurações para cada métrica e distância."
+        },
+        {
+          "tag": "p",
+          "text": "A F1-Macro atribui o mesmo peso a cada classe, contribuindo para analisar o desempenho além das classes mais frequentes. As métricas são observadas em conjunto para comparar as configurações avaliadas."
+        },
+        {
+          "tag": "h3",
+          "text": "05 — Organização do projeto"
+        },
+        {
+          "tag": "p",
+          "text": "O código está organizado em módulos de processamento dos dados, visualização, classificação e avaliação. Um ponto de entrada executa o fluxo e salva os gráficos em PNG e a tabela de resultados em CSV."
+        },
+        {
+          "tag": "h3",
+          "text": "06 — Tecnologias e conceitos"
+        },
+        {
+          "tag": "p",
+          "text": "Python, NumPy, pandas, scikit-learn, Matplotlib e Seaborn. Embeddings de imagens, KNN, distância euclidiana, distância cosseno, validação cruzada estratificada, t-SNE e métricas de classificação."
+        },
+        {
+          "tag": "h3",
+          "text": "07 — Aprendizados"
+        },
+        {
+          "tag": "p",
+          "text": "O projeto contribuiu para aprofundar conhecimentos em classificação e avaliação de modelos, que também se relacionam ao meu projeto principal: a classificação de glaucoma em imagens retinianas com inteligência artificial."
+        }
+      ]
+    },
+    {
+      "slug": "portfolio",
+      "category": "Design",
+      "image": "portfolio.jpeg",
+      "title": "Portifólio (no Framer)",
+      "body": [
+        {
+          "tag": "h3",
+          "text": "01 — A proposta"
+        },
+        {
+          "tag": "p",
+          "text": "Este projeto consiste na criação do meu portfólio profissional, desenvolvido inicialmente no Framer, com o objetivo de apresentar minha trajetória, habilidades, projetos e experiências na área de tecnologia de forma visual, organizada e acessível."
+        },
+        {
+          "tag": "p",
+          "text": "A proposta é criar uma identidade visual que represente meu perfil como desenvolvedora de software, equilibrando estética, funcionalidade e uma navegação simples."
+        },
+        {
+          "tag": "h3",
+          "text": "02 — Design"
+        },
+        {
+          "tag": "p",
+          "text": "O design está sendo desenvolvido no Framer, explorando diferentes elementos de interface, animações, transições e interações para criar uma experiência mais dinâmica."
+        },
+        {
+          "tag": "p",
+          "text": "A estrutura foi pensada para apresentar as informações de forma clara, utilizando diferentes seções para destacar sobre mim, formação, habilidades, projetos e contato."
+        },
+        {
+          "tag": "h3",
+          "text": "03 — Experiência do usuário"
+        },
+        {
+          "tag": "p",
+          "text": "Um dos focos do projeto é criar uma experiência de navegação intuitiva e responsiva, garantindo que o conteúdo seja facilmente acessível independentemente do dispositivo utilizado.04 — Da interface ao código"
+        },
+        {
+          "tag": "p",
+          "text": "O projeto não ficará limitado ao protótipo desenvolvido no Framer. A interface está sendo utilizada como base visual para uma versão completamente codificada do portfólio."
+        },
+        {
+          "tag": "p",
+          "text": "A próxima etapa consiste em transformar o design e as interações desenvolvidas no Framer em uma aplicação real, utilizando tecnologias de desenvolvimento web e reproduzindo as funcionalidades e animações através de código."
+        },
+        {
+          "tag": "h3",
+          "text": "05 — Desenvolvimento"
+        },
+        {
+          "tag": "p",
+          "text": "A versão codificada está sendo desenvolvida paralelamente ao design, permitindo aplicar na prática conceitos de desenvolvimento front-end, responsividade, componentes, animações e organização de interfaces."
+        },
+        {
+          "tag": "p",
+          "text": "Essa etapa também permite explorar como transformar uma interface visual em uma aplicação funcional, mantendo a identidade e a experiência planejadas durante o processo de design."
+        },
+        {
+          "tag": "h3",
+          "text": "06 — Tecnologias e conceitos"
+        },
+        {
+          "tag": "p",
+          "text": "Framer"
+        },
+        {
+          "tag": "p",
+          "text": "HTML"
+        },
+        {
+          "tag": "p",
+          "text": "CSS"
+        },
+        {
+          "tag": "p",
+          "text": "JavaScript"
+        },
+        {
+          "tag": "p",
+          "text": "Desenvolvimento Front-end"
+        },
+        {
+          "tag": "p",
+          "text": "Design de Interfaces"
+        },
+        {
+          "tag": "p",
+          "text": "Responsividade"
+        },
+        {
+          "tag": "p",
+          "text": "Animações e interações"
+        },
+        {
+          "tag": "p",
+          "text": "UX/UI"
+        },
+        {
+          "tag": "p",
+          "text": "Desenvolvimento baseado em componentes"
+        },
+        {
+          "tag": "h3",
+          "text": "Objetivo"
+        },
+        {
+          "tag": "p",
+          "text": "Desenvolver um portfólio profissional que una design e desenvolvimento, utilizando o Framer para explorar e estruturar a experiência visual e, posteriormente, transformar essa interface em uma aplicação totalmente codificada."
+        }
+      ],
+      "url": "https://giovana-portifolio.framer.website/"
+    },
+    {
       "slug": "glaucoma",
       "category": "Machine Learning",
       "image": "glaucoma.jpg",
@@ -372,119 +631,6 @@
       "url": "https://drive.google.com/file/d/1zP3I-hsMZDgi6FveYHkVaFlThzt8WeI2/view"
     },
     {
-      "slug": "portfolio",
-      "category": "Design",
-      "image": "portfolio.jpeg",
-      "title": "Portifólio (no Framer)",
-      "body": [
-        {
-          "tag": "h3",
-          "text": "01 — A proposta"
-        },
-        {
-          "tag": "p",
-          "text": "Este projeto consiste na criação do meu portfólio profissional, desenvolvido inicialmente no Framer, com o objetivo de apresentar minha trajetória, habilidades, projetos e experiências na área de tecnologia de forma visual, organizada e acessível."
-        },
-        {
-          "tag": "p",
-          "text": "A proposta é criar uma identidade visual que represente meu perfil como desenvolvedora de software, equilibrando estética, funcionalidade e uma navegação simples."
-        },
-        {
-          "tag": "h3",
-          "text": "02 — Design"
-        },
-        {
-          "tag": "p",
-          "text": "O design está sendo desenvolvido no Framer, explorando diferentes elementos de interface, animações, transições e interações para criar uma experiência mais dinâmica."
-        },
-        {
-          "tag": "p",
-          "text": "A estrutura foi pensada para apresentar as informações de forma clara, utilizando diferentes seções para destacar sobre mim, formação, habilidades, projetos e contato."
-        },
-        {
-          "tag": "h3",
-          "text": "03 — Experiência do usuário"
-        },
-        {
-          "tag": "p",
-          "text": "Um dos focos do projeto é criar uma experiência de navegação intuitiva e responsiva, garantindo que o conteúdo seja facilmente acessível independentemente do dispositivo utilizado.04 — Da interface ao código"
-        },
-        {
-          "tag": "p",
-          "text": "O projeto não ficará limitado ao protótipo desenvolvido no Framer. A interface está sendo utilizada como base visual para uma versão completamente codificada do portfólio."
-        },
-        {
-          "tag": "p",
-          "text": "A próxima etapa consiste em transformar o design e as interações desenvolvidas no Framer em uma aplicação real, utilizando tecnologias de desenvolvimento web e reproduzindo as funcionalidades e animações através de código."
-        },
-        {
-          "tag": "h3",
-          "text": "05 — Desenvolvimento"
-        },
-        {
-          "tag": "p",
-          "text": "A versão codificada está sendo desenvolvida paralelamente ao design, permitindo aplicar na prática conceitos de desenvolvimento front-end, responsividade, componentes, animações e organização de interfaces."
-        },
-        {
-          "tag": "p",
-          "text": "Essa etapa também permite explorar como transformar uma interface visual em uma aplicação funcional, mantendo a identidade e a experiência planejadas durante o processo de design."
-        },
-        {
-          "tag": "h3",
-          "text": "06 — Tecnologias e conceitos"
-        },
-        {
-          "tag": "p",
-          "text": "Framer"
-        },
-        {
-          "tag": "p",
-          "text": "HTML"
-        },
-        {
-          "tag": "p",
-          "text": "CSS"
-        },
-        {
-          "tag": "p",
-          "text": "JavaScript"
-        },
-        {
-          "tag": "p",
-          "text": "Desenvolvimento Front-end"
-        },
-        {
-          "tag": "p",
-          "text": "Design de Interfaces"
-        },
-        {
-          "tag": "p",
-          "text": "Responsividade"
-        },
-        {
-          "tag": "p",
-          "text": "Animações e interações"
-        },
-        {
-          "tag": "p",
-          "text": "UX/UI"
-        },
-        {
-          "tag": "p",
-          "text": "Desenvolvimento baseado em componentes"
-        },
-        {
-          "tag": "h3",
-          "text": "Objetivo"
-        },
-        {
-          "tag": "p",
-          "text": "Desenvolver um portfólio profissional que una design e desenvolvimento, utilizando o Framer para explorar e estruturar a experiência visual e, posteriormente, transformar essa interface em uma aplicação totalmente codificada."
-        }
-      ],
-      "url": "https://giovana-portifolio.framer.website/"
-    },
-    {
       "slug": "chessmath",
       "category": "CRUD completo",
       "image": "chessmath.png",
@@ -781,152 +927,6 @@
         }
       ],
       "url": ""
-    },
-    {
-      "slug": "classificacao-sindromes",
-      "category": "Machine Learning",
-      "image": "classificacao-sindromes.png",
-      "title": "Classificação de síndromes com Machine Learning",
-      "url": "https://github.com/GiovanaAndrade1/Test_apollo_solutions",
-      "body": [
-        {
-          "tag": "h3",
-          "text": "01 — O contexto"
-        },
-        {
-          "tag": "p",
-          "text": "Desenvolvi este projeto como teste técnico em um processo seletivo, trabalhando com a classificação de síndromes a partir de embeddings de imagens. Com um prazo curto, foquei na construção de um pipeline funcional e na comparação das escolhas de modelagem."
-        },
-        {
-          "tag": "h3",
-          "text": "02 — Preparação e exploração dos dados"
-        },
-        {
-          "tag": "p",
-          "text": "O fluxo começa com o carregamento e a preparação dos embeddings, representações numéricas utilizadas como entrada para o classificador. Os rótulos são codificados para a classificação, e a distribuição das classes é explorada para compreender os dados."
-        },
-        {
-          "tag": "p",
-          "text": "Utilizei t-SNE para visualizar os embeddings em duas dimensões e observar a distribuição das amostras entre as diferentes classes. O gráfico ajuda na exploração dos dados, sem substituir a avaliação do modelo."
-        },
-        {
-          "tag": "h3",
-          "text": "03 — Classificação com KNN"
-        },
-        {
-          "tag": "p",
-          "text": "Implementei a classificação com K-Nearest Neighbors (KNN), comparando as distâncias euclidiana e cosseno. O número de vizinhos varia de 1 a 15, permitindo analisar como esse parâmetro influencia o comportamento do classificador."
-        },
-        {
-          "tag": "h3",
-          "text": "04 — Avaliação dos modelos"
-        },
-        {
-          "tag": "p",
-          "text": "A avaliação utiliza validação cruzada estratificada em 10 partições. O pipeline calcula AUC, F1-Macro e Top-k Accuracy e gera gráficos comparativos, além de uma tabela-resumo com as melhores configurações para cada métrica e distância."
-        },
-        {
-          "tag": "p",
-          "text": "A F1-Macro atribui o mesmo peso a cada classe, contribuindo para analisar o desempenho além das classes mais frequentes. As métricas são observadas em conjunto para comparar as configurações avaliadas."
-        },
-        {
-          "tag": "h3",
-          "text": "05 — Organização do projeto"
-        },
-        {
-          "tag": "p",
-          "text": "O código está organizado em módulos de processamento dos dados, visualização, classificação e avaliação. Um ponto de entrada executa o fluxo e salva os gráficos em PNG e a tabela de resultados em CSV."
-        },
-        {
-          "tag": "h3",
-          "text": "06 — Tecnologias e conceitos"
-        },
-        {
-          "tag": "p",
-          "text": "Python, NumPy, pandas, scikit-learn, Matplotlib e Seaborn. Embeddings de imagens, KNN, distância euclidiana, distância cosseno, validação cruzada estratificada, t-SNE e métricas de classificação."
-        },
-        {
-          "tag": "h3",
-          "text": "07 — Aprendizados"
-        },
-        {
-          "tag": "p",
-          "text": "O projeto contribuiu para aprofundar conhecimentos em classificação e avaliação de modelos, que também se relacionam ao meu projeto principal: a classificação de glaucoma em imagens retinianas com inteligência artificial."
-        }
-      ]
-    },
-    {
-      "slug": "brisa",
-      "category": "Desenvolvimento Web",
-      "image": "brisa.png",
-      "title": "Brisa — previsão do tempo",
-      "url": "https://github.com/GiovanaAndrade1/brisa",
-      "body": [
-        {
-          "tag": "h3",
-          "text": "01 — A proposta"
-        },
-        {
-          "tag": "p",
-          "text": "O Brisa é um aplicativo de previsão do tempo com interface em português, desenvolvido com HTML, CSS e JavaScript puro. A proposta é reunir condições atuais e previsões em uma interface responsiva, explorando integração com APIs, manipulação do DOM e programação assíncrona."
-        },
-        {
-          "tag": "h3",
-          "text": "02 — Busca de cidades e localização"
-        },
-        {
-          "tag": "p",
-          "text": "Na abertura, o aplicativo consulta a previsão de São Paulo enquanto a localização está pendente ou indisponível. A localização do navegador é opcional e depende da autorização do visitante. A busca manual permite consultar outras cidades."
-        },
-        {
-          "tag": "p",
-          "text": "A partir de duas letras, a busca apresenta sugestões com cidade, estado e país após uma pausa de 350 ms. Consultas anteriores são canceladas para evitar resultados desatualizados. As opções podem ser percorridas com Tab e selecionadas com Enter."
-        },
-        {
-          "tag": "h3",
-          "text": "03 — Informações meteorológicas"
-        },
-        {
-          "tag": "p",
-          "text": "A interface reúne temperatura, sensação térmica, vento, umidade, pôr do sol e probabilidade de chuva. Também apresenta a previsão por hora e para os próximos sete dias, com horários locais da cidade consultada."
-        },
-        {
-          "tag": "h3",
-          "text": "04 — Integração com APIs"
-        },
-        {
-          "tag": "p",
-          "text": "O aplicativo utiliza a Open-Meteo para encontrar cidades e consultar dados meteorológicos. A API de geocodificação transforma a busca em opções com coordenadas; essas coordenadas são utilizadas na consulta da previsão."
-        },
-        {
-          "tag": "p",
-          "text": "As requisições usam programação assíncrona e tratamento de erros. Estados de carregamento e falha são apresentados na interface, sem substituir indisponibilidades da API por dados fictícios. AbortController cancela consultas anteriores quando uma nova busca começa."
-        },
-        {
-          "tag": "h3",
-          "text": "05 — Organização e interface"
-        },
-        {
-          "tag": "p",
-          "text": "O projeto separa estrutura, estilos, configuração e lógica em arquivos próprios. O CSS utiliza Grid e Flexbox para adaptar o layout a diferentes telas. Um servidor estático local em Node.js permite executar a aplicação sem instalar dependências."
-        },
-        {
-          "tag": "h3",
-          "text": "06 — Tecnologias e conceitos"
-        },
-        {
-          "tag": "p",
-          "text": "HTML5, CSS3, JavaScript, Node.js, Open-Meteo, APIs HTTP, geocodificação, geolocalização opcional, manipulação do DOM, programação assíncrona, tratamento de erros e interface responsiva."
-        },
-        {
-          "tag": "h3",
-          "text": "07 — Possíveis evoluções"
-        },
-        {
-          "tag": "p",
-          "text": "O README apresenta como próximos passos testes automatizados persistentes, validação mais robusta das respostas das APIs e publicação da interface. O aplicativo depende de conexão com a internet e da disponibilidade das APIs externas; não possui cache, favoritos ou histórico de cidades."
-        }
-      ]
     }
   ],
   "stack": [
