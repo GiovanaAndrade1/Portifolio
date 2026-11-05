@@ -195,3 +195,35 @@ footer { max-width: var(--content-width); margin-left: auto; margin-right: auto;
   .certificate-info h2 { font-size: 16px; }
   .certificate-info > p, .certificate-actions { font-size: 13px; }
 }
+
+@view-transition { navigation: auto; }
+.sidebar { view-transition-name: sidebar; }
+.main-column { view-transition-name: page-content; }
+::view-transition-group(root),
+::view-transition-group(sidebar),
+::view-transition-group(page-content) { animation: none; }
+::view-transition-old(root),
+::view-transition-new(root),
+::view-transition-old(sidebar),
+::view-transition-new(sidebar) { animation: none; mix-blend-mode: normal; }
+::view-transition-old(page-content) { animation: page-leave 180ms ease-out both; mix-blend-mode: normal; }
+::view-transition-new(page-content) { animation: page-arrive 300ms cubic-bezier(.22, 1, .36, 1) both; mix-blend-mode: normal; }
+@keyframes page-leave {
+  to { opacity: 0; transform: translateY(-6px); }
+}
+@keyframes page-arrive {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@supports not (view-transition-name: page-content) {
+  .main-column { animation: page-arrive 300ms ease-out both; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .main-column,
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) { animation: none !important; }
+}
+
+.project-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+@media (max-width: 600px) { .project-links { grid-template-columns: minmax(0, 1fr); } }

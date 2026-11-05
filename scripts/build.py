@@ -43,7 +43,7 @@ def certificate_cards(items):
     return '<div class="certificate-grid">' + ''.join(cards_html) + '</div>'
 
 def page(filename, title, body, active='index.html', prefix=''):
-    nav = ''.join(f'<a href="{prefix}{url}" {"aria-current=\"page\"" if active == url else ""}><img class="nav-icon" src="{prefix}assets/icons/{icon}.svg" alt="" width="18" height="18">{label}</a>' for url,label,icon in NAV)
+    nav = ''.join(f'<a href="{prefix}{url}" {"aria-current=\"page\"" if active == url else ""}><img class="nav-icon" src="{prefix}assets/icons/{("user-active" if active == url else "user-outline") if icon == "user" else icon}.svg" alt="" width="18" height="18">{label}</a>' for url,label,icon in NAV)
     social = social_link('github', 'GitHub', DATA['github'], prefix) + social_link('gmail', 'E-mail', 'https://mail.google.com/mail/?view=cm&fs=1&to=' + DATA['email'], prefix) + social_link('linkedin', 'LinkedIn', DATA['linkedin'], prefix)
     html = f'''<!doctype html>
 <html lang="pt-BR">
@@ -107,6 +107,8 @@ def build():
     for project in DATA['projects']:
         href = project['url']
         cta = f'<a class="button" href="{e(href)}" target="_blank" rel="noopener noreferrer">Visualizar projeto <span aria-hidden="true">↗</span></a>' if href else button('Conversar sobre o projeto','../contato.html')
+        if project.get('links'):
+            cta = '<div class="project-links">' + ''.join(f'<a class="button" href="{e(link["url"])}" target="_blank" rel="noopener noreferrer">{e(link["label"])} <span aria-hidden="true">↗</span></a>' for link in project['links']) + '</div>'
         body = '<a class="back-link" href="../projetos.html">← Voltar</a>' + f'<section class="intro project-intro"><h1>{e(project["title"])}</h1><span class="eyebrow">{e(project["category"])}</span></section>' + cta + f'<img class="detail-image" src="../assets/images/{project["image"]}" alt="{e(project["title"])}" width="1000" height="600"><article class="prose">{blocks(project["body"])}</article><section class="section"><h2>Outros projetos</h2>' + cards([p for p in DATA['projects'] if p!=project][:2],'../') + '</section>'
         page(f'projetos/{project["slug"]}.html',project['title'],body,'projetos.html','../')
     page('privacidade.html','Privacidade',intro('Privacidade') + '<div class="prose"><p>Este portfólio estático não possui cadastro, ferramentas de análise de acesso ou armazenamento de dados pessoais no navegador.</p><p>O formulário abre o Gmail no navegador com os dados informados na mensagem. O envio só ocorre quando você o confirma no Gmail. O serviço segue a política de privacidade do Google. As informações enviadas por e-mail serão utilizadas para responder ao seu contato.</p><p>Links para plataformas externas seguem as políticas de privacidade dessas plataformas.</p></div>')

@@ -180,9 +180,9 @@
     },
     {
       "slug": "portfolio",
-      "category": "Design",
+      "category": "UX/UI e Desenvolvimento Web",
       "image": "portfolio.jpeg",
-      "title": "Portifólio (no Framer)",
+      "title": "Portfólio profissional — giovanaandrade.dev",
       "body": [
         {
           "tag": "h3",
@@ -190,51 +190,39 @@
         },
         {
           "tag": "p",
-          "text": "Este projeto consiste na criação do meu portfólio profissional, desenvolvido inicialmente no Framer, com o objetivo de apresentar minha trajetória, habilidades, projetos e experiências na área de tecnologia de forma visual, organizada e acessível."
-        },
-        {
-          "tag": "p",
-          "text": "A proposta é criar uma identidade visual que represente meu perfil como desenvolvedora de software, equilibrando estética, funcionalidade e uma navegação simples."
+          "text": "Desenvolvi meu portfólio profissional desde a concepção de UX/UI até a implementação e publicação em giovanaandrade.dev. O objetivo é apresentar minha trajetória, habilidades, projetos e experiências de forma clara, organizada e acessível."
         },
         {
           "tag": "h3",
-          "text": "02 — Design"
+          "text": "02 — Design e experiência do usuário"
         },
         {
           "tag": "p",
-          "text": "O design está sendo desenvolvido no Framer, explorando diferentes elementos de interface, animações, transições e interações para criar uma experiência mais dinâmica."
-        },
-        {
-          "tag": "p",
-          "text": "A estrutura foi pensada para apresentar as informações de forma clara, utilizando diferentes seções para destacar sobre mim, formação, habilidades, projetos e contato."
+          "text": "O processo começou no Framer, com a definição da identidade visual, da organização das informações e dos fluxos de navegação. O protótipo serviu como referência para o desenvolvimento da interface e para as decisões de layout, tipografia e espaçamento."
         },
         {
           "tag": "h3",
-          "text": "03 — Experiência do usuário"
+          "text": "03 — Do protótipo à implementação"
         },
         {
           "tag": "p",
-          "text": "Um dos focos do projeto é criar uma experiência de navegação intuitiva e responsiva, garantindo que o conteúdo seja facilmente acessível independentemente do dispositivo utilizado.04 — Da interface ao código"
-        },
-        {
-          "tag": "p",
-          "text": "O projeto não ficará limitado ao protótipo desenvolvido no Framer. A interface está sendo utilizada como base visual para uma versão completamente codificada do portfólio."
-        },
-        {
-          "tag": "p",
-          "text": "A próxima etapa consiste em transformar o design e as interações desenvolvidas no Framer em uma aplicação real, utilizando tecnologias de desenvolvimento web e reproduzindo as funcionalidades e animações através de código."
+          "text": "Transformei o protótipo em um site responsivo com HTML, CSS e JavaScript, incluindo páginas de projetos, formação, experiências, recomendações e certificados. A navegação e a apresentação do conteúdo foram adaptadas para diferentes tamanhos de tela."
         },
         {
           "tag": "h3",
-          "text": "05 — Desenvolvimento"
+          "text": "04 — Organização e manutenção"
         },
         {
           "tag": "p",
-          "text": "A versão codificada está sendo desenvolvida paralelamente ao design, permitindo aplicar na prática conceitos de desenvolvimento front-end, responsividade, componentes, animações e organização de interfaces."
+          "text": "Organizei o conteúdo, os estilos e as interações em arquivos próprios para facilitar a manutenção. Os textos e dados dos projetos ficam centralizados, e um gerador em Python produz as páginas HTML com a mesma estrutura visual."
+        },
+        {
+          "tag": "h3",
+          "text": "05 — Publicação e domínio próprio"
         },
         {
           "tag": "p",
-          "text": "Essa etapa também permite explorar como transformar uma interface visual em uma aplicação funcional, mantendo a identidade e a experiência planejadas durante o processo de design."
+          "text": "Configurei a publicação pelo GitHub Pages, com controle de versão no GitHub, domínio próprio e DNS administrado no Cloudflare. O site está disponível em giovanaandrade.dev, enquanto o protótipo original permanece acessível no Framer."
         },
         {
           "tag": "h3",
@@ -242,43 +230,7 @@
         },
         {
           "tag": "p",
-          "text": "Framer"
-        },
-        {
-          "tag": "p",
-          "text": "HTML"
-        },
-        {
-          "tag": "p",
-          "text": "CSS"
-        },
-        {
-          "tag": "p",
-          "text": "JavaScript"
-        },
-        {
-          "tag": "p",
-          "text": "Desenvolvimento Front-end"
-        },
-        {
-          "tag": "p",
-          "text": "Design de Interfaces"
-        },
-        {
-          "tag": "p",
-          "text": "Responsividade"
-        },
-        {
-          "tag": "p",
-          "text": "Animações e interações"
-        },
-        {
-          "tag": "p",
-          "text": "UX/UI"
-        },
-        {
-          "tag": "p",
-          "text": "Desenvolvimento baseado em componentes"
+          "text": "Framer, HTML5, CSS3, JavaScript, Python para geração das páginas, Git, GitHub Pages e Cloudflare. UX/UI, desenvolvimento front-end, responsividade, organização de conteúdo e publicação de sites estáticos."
         },
         {
           "tag": "h3",
@@ -286,10 +238,20 @@
         },
         {
           "tag": "p",
-          "text": "Desenvolver um portfólio profissional que una design e desenvolvimento, utilizando o Framer para explorar e estruturar a experiência visual e, posteriormente, transformar essa interface em uma aplicação totalmente codificada."
+          "text": "Unir design e desenvolvimento em um portfólio que represente meu perfil profissional e permita apresentar novos projetos, aprendizados e experiências de maneira consistente."
         }
       ],
-      "url": "https://giovana-portifolio.framer.website/"
+      "url": "https://giovanaandrade.dev/",
+      "links": [
+        {
+          "label": "Ver site",
+          "url": "https://giovanaandrade.dev/"
+        },
+        {
+          "label": "Ver protótipo no Framer",
+          "url": "https://giovana-portifolio.framer.website/"
+        }
+      ]
     },
     {
       "slug": "glaucoma",
