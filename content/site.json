@@ -1067,5 +1067,51 @@
       "date": "4 de novembro de 2026",
       "description": "Curso de engenharia de prompts ministrado por Andre Iacono."
     }
+  ],
+  "recommendations": [
+    {
+      "name": "Sandro de Paiva Carvalho",
+      "role": "Professor · Departamento Acadêmico de Ciência da Computação",
+      "organization": "IF Sudeste MG — Campus Rio Pomba",
+      "category": "Acadêmica",
+      "date": "6 de novembro de 2026",
+      "initials": "SC",
+      "paragraphs": [
+        "A aluna tem apresentado um desenvolvimento acadêmico consistente ao longo do curso, com aproveitamento exemplar. Possui projetos de extensão e ensino em seu currículo, mantém diálogo produtivo com o corpo docente e cumpre suas atividades com responsabilidade e organização.",
+        "Além disso, atende prontamente às solicitações dos professores e é pontual na entrega das atividades. Sua postura é marcada pela boa vontade, pelo interesse e pela disposição, características que favorecem o convívio acadêmico.",
+        "Sua participação em eventos científicos e sua dedicação à produção acadêmica são expressivas. Sua trajetória demonstra interesse pela pesquisa e indica que continuará investindo na produção e na circulação do conhecimento, mesmo após a conclusão do curso."
+      ],
+      "attachment": "assets/recomendacoes/carta-professor-sandro-carvalho.pdf",
+      "attachment_label": "Ver carta completa (PDF)",
+      "excerpt": true
+    },
+    {
+      "name": "Sérgio Muinhos Barroso Lima",
+      "role": "Professor · Mestre pela UNICAMP",
+      "organization": "IF Sudeste MG",
+      "category": "Acadêmica",
+      "date": "",
+      "initials": "SL",
+      "paragraphs": [
+        "Conheci a Giovana em um projeto sobre IA Aplicada ao Ensino e considero que ela teve um desempenho excelente. Seu trabalho, um artigo completo submetido ao Congresso Brasileiro Interdisciplinar em Ciência e Tecnologia, foi classificado em segundo lugar no eixo de Ciências Exatas e da Terra, dentre centenas de trabalhos de todo o país."
+      ],
+      "attachment": "",
+      "attachment_label": "",
+      "excerpt": false
+    },
+    {
+      "name": "Inova Tecnologia em Serviços Ltda.",
+      "role": "Empresa responsável pela contratação",
+      "organization": "Atuação no Tribunal Regional Eleitoral de Minas Gerais",
+      "category": "Profissional",
+      "date": "28 de outubro de 2026",
+      "initials": "IT",
+      "paragraphs": [
+        "A Inova Tecnologia em Serviços Ltda. declara que Giovana Andrade e Ferreira foi sua funcionária no período de 2 de setembro a 28 de outubro de 2026, exercendo a função de Profissional de Apoio às Eleições no Tribunal Regional Eleitoral de Minas Gerais, nada constando em seus arquivos que desabone sua conduta profissional."
+      ],
+      "attachment": "assets/recomendacoes/carta-inova-tecnologia.pdf",
+      "attachment_label": "Ver carta completa (PDF)",
+      "excerpt": false
+    }
   ]
 }

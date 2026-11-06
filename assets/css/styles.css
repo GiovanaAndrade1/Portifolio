@@ -227,3 +227,27 @@ footer { max-width: var(--content-width); margin-left: auto; margin-right: auto;
 
 .project-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
 @media (max-width: 600px) { .project-links { grid-template-columns: minmax(0, 1fr); } }
+
+.recommendations-list { display: grid; gap: 24px; margin-top: 36px; }
+.recommendation-card { padding: 28px; border: 1px solid var(--color-line); border-radius: 10px; }
+.recommendation-header { display: flex; align-items: flex-start; gap: 14px; }
+.recommendation-avatar { display: grid; place-items: center; flex-shrink: 0; width: 46px; height: 46px; border-radius: 50%; background: var(--color-surface); border: 1px solid var(--color-line); color: var(--color-muted); font-size: 14px; font-weight: 600; }
+.recommendation-author { min-width: 0; flex: 1; }
+.recommendation-author h2 { font-size: 19px; line-height: 1.4; }
+.recommendation-author p { color: var(--color-muted); font-size: 13px; line-height: 1.6; margin-top: 3px; }
+.recommendation-category { color: var(--color-muted); padding: 3px 9px; background: var(--color-surface); border-radius: 4px; font-size: 11px; white-space: nowrap; }
+.recommendation-message { margin-top: 24px; padding-left: 18px; border-left: 2px solid #dcebe5; color: #555; font-size: 15px; line-height: 1.8; }
+.recommendation-message p + p { margin-top: 14px; }
+.recommendation-footer { display: flex; align-items: center; flex-wrap: wrap; gap: 12px 20px; margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--color-line); font-size: 12px; color: var(--color-muted); }
+.recommendation-note { font-style: italic; }
+.recommendation-document { margin-left: auto; color: var(--color-text); display: inline-flex; align-items: center; gap: 7px; min-height: 32px; }
+.recommendation-document:hover { color: var(--color-accent); }
+@media (max-width: 600px) {
+  .recommendation-card { padding: 20px; }
+  .recommendation-header { flex-wrap: wrap; }
+  .recommendation-author { flex-basis: calc(100% - 60px); }
+  .recommendation-category { margin-left: 60px; }
+  .recommendation-author h2 { font-size: 17px; }
+  .recommendation-message { padding-left: 14px; font-size: 14px; }
+  .recommendation-document { margin-left: 0; flex-basis: 100%; }
+}

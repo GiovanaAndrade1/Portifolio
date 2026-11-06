@@ -42,6 +42,19 @@ def certificate_cards(items):
         cards_html.append(f'<article class="certificate-card"><a class="certificate-preview" href="{base}.pdf" target="_blank" rel="noopener noreferrer" aria-label="Visualizar certificado: {e(item["title"])}"><img src="{base}.jpg" alt="Prévia do certificado: {e(item["title"])}" loading="lazy" width="1200" height="850"></a><div class="certificate-info"><span class="eyebrow">{e(item["category"])}</span><h2>{e(item["title"])}</h2><p class="certificate-issuer">{e(item["issuer"])}</p><p class="certificate-meta">{e(metadata)}</p><p>{e(item["description"])}</p><div class="certificate-actions"><a href="{base}.pdf" target="_blank" rel="noopener noreferrer">Visualizar PDF <span aria-hidden="true">↗</span></a><a href="{base}.pdf" download>Baixar PDF <span aria-hidden="true">↓</span></a></div></div></article>')
     return '<div class="certificate-grid">' + ''.join(cards_html) + '</div>'
 
+def recommendation_cards(items):
+    cards_html = []
+    for item in items:
+        message = ''.join(f'<p>{e(paragraph)}</p>' for paragraph in item['paragraphs'])
+        date = f'<span class="recommendation-date">{e(item["date"])}</span>' if item['date'] else ''
+        note = '<span class="recommendation-note">Trechos da carta original</span>' if item.get('excerpt') else ''
+        link = ''
+        if item.get('attachment'):
+            download = ' download' if item['attachment'].endswith('.docx') else ''
+            link = f'<a class="recommendation-document" href="{e(item["attachment"])}" target="_blank" rel="noopener noreferrer"{download}>{e(item["attachment_label"])} <span aria-hidden="true">↗</span></a>'
+        cards_html.append(f'<article class="recommendation-card"><div class="recommendation-header"><span class="recommendation-avatar" aria-hidden="true">{e(item["initials"])}</span><div class="recommendation-author"><h2>{e(item["name"])}</h2><p>{e(item["role"])}</p><p>{e(item["organization"])}</p></div><span class="recommendation-category">{e(item["category"])}</span></div><div class="recommendation-message">{message}</div><div class="recommendation-footer">{date}{note}{link}</div></article>')
+    return '<div class="recommendations-list">' + ''.join(cards_html) + '</div>'
+
 def page(filename, title, body, active='index.html', prefix=''):
     nav = ''.join(f'<a href="{prefix}{url}" {"aria-current=\"page\"" if active == url else ""}><img class="nav-icon" src="{prefix}assets/icons/{("user-active" if active == url else "user-outline") if icon == "user" else icon}.svg" alt="" width="18" height="18">{label}</a>' for url,label,icon in NAV)
     social = social_link('github', 'GitHub', DATA['github'], prefix) + social_link('gmail', 'E-mail', 'https://mail.google.com/mail/?view=cm&fs=1&to=' + DATA['email'], prefix) + social_link('linkedin', 'LinkedIn', DATA['linkedin'], prefix)
@@ -88,7 +101,7 @@ def build():
     about = DATA['about']
     experiences = '<section class="prose"><h2>Experiências</h2>' + ''.join(f'<article class="experience"><h3>{e(x["title"])}</h3><div class="experience-meta"><span>{e(x["organization"])}</span><span>{e(x["period"])}</span></div><p>{e(x["description"])}</p></article>' for x in DATA['experiences']) + '</section>'
     page('sobre.html','Sobre mim', '<div class="about-hero">' + intro(about[0]['text'],about[1]['text']) + '<img class="about-photo" src="assets/images/giovana.jpeg" alt="Giovana Andrade" width="1200" height="1600"></div>' + '<div class="prose">' + blocks(about[2:]) + '</div>' + experiences + button('Se interessou?','contato.html'),'sobre.html')
-    recommendations = intro('Recomendações', 'Um espaço para compartilhar recomendações sobre meu trabalho e minha trajetória.') + '<section class="recommendations-empty" aria-labelledby="recommendations-empty-title"><img src="assets/icons/recommendations.svg" alt="" width="32" height="32"><h2 id="recommendations-empty-title">Recomendações em breve</h2><p>Este espaço será atualizado com novas recomendações.</p></section>'
+    recommendations = intro('Recomendações', 'Mensagens de professores e de quem acompanhou minha trajetória acadêmica e profissional.') + recommendation_cards(DATA.get('recommendations', []))
     page('recomendacoes.html', 'Recomendações', recommendations, 'recomendacoes.html')
     page('certificados.html', 'Certificados', intro('Certificados', 'Cursos, projetos de extensão e reconhecimentos que fazem parte da minha formação.') + certificate_cards(DATA.get('certificates', [])), 'certificados.html')
     page('stack.html','Minha stack',intro('Minhas Skills Stacks:') + stack_cards(DATA['stack'],True),'stack.html')
