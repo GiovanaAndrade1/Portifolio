@@ -254,6 +254,61 @@
       ]
     },
     {
+      "slug": "petmatch",
+      "category": "Desenvolvimento Web",
+      "image": "petmatch.jpg",
+      "title": "PetMatch — adoção de cães e gatos",
+      "body": [
+        {
+          "tag": "h3",
+          "text": "01 — A proposta"
+        },
+        {
+          "tag": "p",
+          "text": "Desenvolvi o PetMatch entre 7 e 14 de outubro de 2026 como um site para uma ONG fictícia de adoção de cães e gatos em Belo Horizonte."
+        },
+        {
+          "tag": "h3",
+          "text": "02 — Vitrine de animais"
+        },
+        {
+          "tag": "p",
+          "text": "A página inicial apresenta seis animais e organiza o processo de adoção em quatro etapas. A seção Sobre apresenta a ONG e explica como funciona o lar temporário."
+        },
+        {
+          "tag": "h3",
+          "text": "03 — Feiras e vacinas"
+        },
+        {
+          "tag": "p",
+          "text": "Criei uma página para reunir informações sobre feiras de adoção e vacinação, com uma tabela para facilitar a consulta."
+        },
+        {
+          "tag": "h3",
+          "text": "04 — Pré-cadastro"
+        },
+        {
+          "tag": "p",
+          "text": "A interface inclui um formulário de pré-cadastro com validação nativa do HTML, campos obrigatórios e opção para limpar as informações preenchidas."
+        },
+        {
+          "tag": "h3",
+          "text": "05 — Interface responsiva"
+        },
+        {
+          "tag": "p",
+          "text": "Usei HTML semântico e CSS para adaptar o layout a diferentes tamanhos de tela. O menu móvel funciona apenas com HTML e CSS, e os estilos respeitam a preferência do sistema por movimento reduzido."
+        }
+      ],
+      "url": "https://github.com/GiovanaAndrade1/petmatch",
+      "links": [
+        {
+          "label": "Ver no GitHub",
+          "url": "https://github.com/GiovanaAndrade1/petmatch"
+        }
+      ]
+    },
+    {
       "slug": "glaucoma",
       "category": "Machine Learning",
       "image": "glaucoma.jpg",
