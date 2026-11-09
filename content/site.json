@@ -300,8 +300,12 @@
           "text": "Usei HTML semântico e CSS para adaptar o layout a diferentes tamanhos de tela. O menu móvel funciona apenas com HTML e CSS, e os estilos respeitam a preferência do sistema por movimento reduzido."
         }
       ],
-      "url": "https://github.com/GiovanaAndrade1/petmatch",
+      "url": "https://giovanaandrade1.github.io/petmatch/",
       "links": [
+        {
+          "label": "Ver site",
+          "url": "https://giovanaandrade1.github.io/petmatch/"
+        },
         {
           "label": "Ver no GitHub",
           "url": "https://github.com/GiovanaAndrade1/petmatch"
