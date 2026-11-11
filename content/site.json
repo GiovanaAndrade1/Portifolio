@@ -1126,7 +1126,7 @@
       "title": "PIBIC (Iniciação Científica)",
       "organization": "IFSudesteMG",
       "period": "2026-presente",
-      "description": "Desenvolvimento de uma plataforma web para gerenciamento de torneios de xadrez com pareamento automático pelo sistema suíço, utilizando Python (framework django) e integração com banco de dados. O sistema foi projetado para gerar emparelhamentos matematicamente mais precisos entre jogadores de níveis semelhantes."
+      "description": "Pesquisa sobre a detecção de glaucoma em imagens da retina com inteligência artificial. O projeto avalia métodos de processamento de imagens e aprendizado de máquina para identificar sinais de glaucoma em imagens retinianas."
     },
     {
       "title": "Estágio Supervisionado de TI",
