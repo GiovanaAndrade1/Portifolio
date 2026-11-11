@@ -1238,6 +1238,20 @@
       "attachment": "assets/recomendacoes/carta-inova-tecnologia.pdf",
       "attachment_label": "Ver carta completa (PDF)",
       "excerpt": false
+    },
+    {
+      "name": "Octavio Pelucio Ottoni Pizato",
+      "role": "Chefe de Cartório · 239ª Zona Eleitoral",
+      "organization": "Tribunal Regional Eleitoral de Minas Gerais — Rio Pomba",
+      "category": "Profissional",
+      "date": "11 de novembro de 2026",
+      "initials": "OP",
+      "paragraphs": [
+        "Destaco ainda sua proatividade, comprometimento com prazos e facilidade em lidar com desafios, sempre disposta a colaborar com os colegas na busca por soluções eficazes."
+      ],
+      "attachment": "assets/recomendacoes/carta-octavio-pizato.pdf",
+      "attachment_label": "Ver carta (PDF)",
+      "excerpt": true
     }
   ]
 }
