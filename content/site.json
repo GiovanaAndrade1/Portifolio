@@ -33,6 +33,73 @@
   ],
   "projects": [
     {
+      "slug": "em-dia",
+      "category": "Desenvolvimento Web",
+      "image": "em-dia.png",
+      "title": "Em dia — gerenciamento de tarefas e caderno digital",
+      "url": "https://giovanaandrade1.github.io/em-dia/",
+      "links": [
+        {
+          "label": "Ver demonstração",
+          "url": "https://giovanaandrade1.github.io/em-dia/"
+        },
+        {
+          "label": "Ver no GitHub",
+          "url": "https://github.com/GiovanaAndrade1/em-dia"
+        }
+      ],
+      "body": [
+        {
+          "tag": "h3",
+          "text": "01 — A proposta"
+        },
+        {
+          "tag": "p",
+          "text": "O Em dia é um aplicativo em português que reúne tarefas, calendário e caderno digital em um só lugar. A proposta é facilitar a organização dos estudos e da rotina, com perfis para separar diferentes contextos de uso."
+        },
+        {
+          "tag": "h3",
+          "text": "02 — Tarefas e calendário"
+        },
+        {
+          "tag": "p",
+          "text": "É possível criar, editar e concluir tarefas com prioridade, prazo e duração. A interface permite buscar por título ou descrição e filtrar entre pendentes, ativas e concluídas. O calendário mensal destaca os dias com tarefas e pode abrir um evento preenchido para a pessoa salvar no Google Agenda."
+        },
+        {
+          "tag": "h3",
+          "text": "03 — Caderno digital"
+        },
+        {
+          "tag": "p",
+          "text": "O caderno reúne texto, escrita à mão, anexos e pastas personalizáveis. A folha aceita mouse, toque ou caneta. Também é possível exportar o desenho em PNG, gerar um backup editável em JSON ou usar a impressão para salvar em PDF."
+        },
+        {
+          "tag": "h3",
+          "text": "04 — Contas e armazenamento"
+        },
+        {
+          "tag": "p",
+          "text": "O servidor em Node.js gerencia o cadastro, as sessões e a gravação em SQLite. Tarefas, notas e anexos ficam vinculados à conta autenticada. A entrada pelo Google pode ser habilitada com configuração OAuth."
+        },
+        {
+          "tag": "h3",
+          "text": "05 — Lembretes e comandos de voz"
+        },
+        {
+          "tag": "p",
+          "text": "Com o n8n configurado, o aplicativo pode enviar avisos por e-mail ao criar uma tarefa, perto do prazo e após o vencimento. O assistente aceita comandos por voz ou texto e pode usar a API da OpenAI para interpretar o pedido quando a pessoa autoriza."
+        },
+        {
+          "tag": "h3",
+          "text": "06 — Tecnologias e demonstração"
+        },
+        {
+          "tag": "p",
+          "text": "HTML5, CSS3 e JavaScript no navegador, Node.js e SQLite no servidor, além de n8n para a automação de lembretes. A demonstração no GitHub Pages usa dados fictícios e guarda alterações apenas enquanto a página está aberta. A versão completa roda localmente com o servidor."
+        }
+      ]
+    },
+    {
       "slug": "brisa",
       "category": "Desenvolvimento Web",
       "image": "brisa.png",
